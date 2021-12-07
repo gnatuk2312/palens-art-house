@@ -155,6 +155,10 @@ body {
 	border-radius: 10px;
 	box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
 }
+.circle-shadow {
+	-webkit-filter: drop-shadow(5px 5px 10px rgba(34, 34, 34, 0.603));
+	filter: drop-shadow(5px 5px 10px rgba(34, 34, 34, 0.603));
+}
 .title {
 	font-size: 1.2857rem;
 	font-weight: 400;
