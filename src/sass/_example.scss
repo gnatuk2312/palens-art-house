@@ -92,7 +92,6 @@ $grey-color: rgb(245, 245, 245);
 body {
 	font-family: "Comfortaa", sans-serif;
 	background-color: $grey-color;
-	overflow-x: hidden;
 }
 
 /*-----common styles-----*/
@@ -631,9 +630,10 @@ body {
 }
 
 .best-present {
+	background: url("../images/gift-bg.jpg") no-repeat -440px;
 	margin-top: 10px;
 	position: relative;
-	padding: 0px 0% 440px 0%;
+	padding: 0px 0% 640px 0px;
 	max-height: 360px;
 	& > img {
 		position: absolute;
