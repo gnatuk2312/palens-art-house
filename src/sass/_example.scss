@@ -100,6 +100,10 @@ body {
 	max-width: 950px;
 	margin: auto;
 }
+.container-big {
+	max-width: 1200px;
+	margin: auto;
+}
 .background {
 	background-color: $bg-Color;
 }
@@ -894,6 +898,16 @@ body {
 	&__image {
 		margin-right: 30px;
 		position: relative;
+		flex: 1;
+		height: 350px;
+		img {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			object-fit: cover;
+		}
 	}
 
 	&__button {
@@ -901,9 +915,13 @@ body {
 		top: 340px;
 		left: 50%;
 		transform: translate(-50%, 0);
+		button {
+			min-width: 180px;
+		}
 	}
 
 	&__body {
+		flex: 2;
 		margin-left: 80px;
 		text-align: center;
 		line-height: 26px;
