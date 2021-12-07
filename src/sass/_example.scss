@@ -114,6 +114,10 @@ body {
 	width: 16px;
 	height: 16px;
 }
+.svg-big {
+	width: 24px;
+	height: 24px;
+}
 .svg__big {
 	width: 34px;
 	height: 34px;
@@ -916,7 +920,17 @@ body {
 		left: 50%;
 		transform: translate(-50%, 0);
 		button {
-			min-width: 180px;
+			min-width: 200px;
+			padding-right: 16px;
+			span {
+				position: absolute;
+				z-index: 2;
+				top: 50%;
+				transform: translate(0, -50%);
+				left: 26px;
+				width: 16px;
+				height: 16px;
+			}
 		}
 	}
 
@@ -1190,7 +1204,7 @@ footer {
 	}
 }
 .popup-design {
-	display: block;
+	display: none;
 
 	&__upload {
 		padding-top: 20px;
