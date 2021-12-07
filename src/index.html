@@ -645,9 +645,9 @@
 				</section>
 			</div>
 		</div>
-		<div class="popup-design">
-			<div class="popup-design__body">
-				<h4 class="popup-design__title">Замовити дизайн портрета</h4>
+		<div class="popup-design popup">
+			<div class="popup-design__body popup__body">
+				<h4 class="popup-design__title popup__title">Замовити дизайн портрета</h4>
 				<div class="popup-design__upload">
 					<input type="file" class="upload" hidden="hidden">
 					<button class="upload-btn"><img src="images/svg/camera.png" class="svg" alt="svg">
@@ -655,13 +655,30 @@
 						фотографію</button>
 					<span class="upload-span">Файл не вибрано</span>
 				</div>
-				<input type="text" name="name" placeholder="Ваше ім'я" class="popup-design__input">
-				<input type="text" name="phone" placeholder="Ваш телефон" class="popup-design__input">
-				<input type="text" name="email" placeholder="Ваш E-mail" class="popup-design__input">
-				<input type="text" name="question" placeholder="Залиште ваше запитання тут" class="popup-design__input">
-				<div class="popup-design__button">
+				<div class="popup-design__inputs popup__inputs">
+					<input type="text" name="name" placeholder="Ваше ім'я" class="popup-design__input popup__input">
+					<input type="text" name="phone" placeholder="Ваш телефон" class="popup-design__input popup__input">
+					<input type="text" name="email" placeholder="Ваш E-mail" class="popup-design__input popup__input">
+					<input type="text" name="question" placeholder="Коментар" class="popup-design__input popup__input">
+				</div>
+				<div class="popup-design__button popup__button">
 					<button class="button-order">Відправити дизайнеру</button>
 				</div>
+				<img src="images/svg/delete.png" alt="svg" class="svg close popup__close">
+			</div>
+		</div>
+		<div class="popup-consultation popup">
+			<div class="popup-consultation__body popup__body">
+				<h4 class="popup-consultation__title popup__title">Залишились питання?</h4>
+				<h4 class="popup-consultation__title popup__title">Замов зворотній дзвінок</h4>
+				<div class="popup-consultation__inputs popup__inputs">
+					<input type="text" name="name" placeholder="Ваше ім'я" class="popup-consultation__input popup__input">
+					<input type="text" name="phone" placeholder="Ваш телефон" class="popup-consultation__input popup__input">
+				</div>
+				<div class="popup-consultation__button popup__button">
+					<button class="button-order">Відправити дизайнеру</button>
+				</div>
+				<img src="images/svg/delete.png" alt="svg" class="svg close popup__close">
 			</div>
 		</div>
 	</main>
