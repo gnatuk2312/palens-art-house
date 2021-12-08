@@ -67,7 +67,7 @@
 		margin-top: 100px;
 		&__images {
 			gap: 0px;
-			margin: 0px;
+			margin: 0px 10px;
 		}
 		&__buttons {
 			margin: 30px 30px 16px 30px;
@@ -78,11 +78,18 @@
 		}
 	}
 }
-@media (max-width: 419px) {
+@media (max-width: 439px) {
 	.portfolio {
 		&__image {
 			margin-bottom: 20px;
 			min-height: 400px;
+		}
+	}
+}
+@media (max-width: 419px) {
+	.portfolio {
+		&__image {
+			min-height: 350px;
 		}
 		&__buttons {
 			margin: 20px 30px 16px 30px;
