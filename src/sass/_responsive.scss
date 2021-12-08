@@ -132,6 +132,130 @@
 }
 //section---------.welcome-----------
 
+//section---------.order-design-----------
+@media (max-width: 1060px) {
+	.order-design {
+		&__photo {
+			margin-left: 20px;
+		}
+		&__description {
+			margin-right: 4px;
+		}
+	}
+}
+@media (max-width: 840px) {
+	.order-design {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 80px;
+		&__photo {
+			width: 80%;
+			height: 100%;
+			padding: 0 0 55% 0;
+			margin: 0px;
+		}
+		&__description {
+			min-height: unset;
+			padding-top: 40px;
+			width: 80%;
+		}
+		&__title {
+			text-align: center;
+			font-size: 2rem;
+			font-weight: 700;
+		}
+		&__subtitle {
+			text-align: center;
+			font-size: 1.4rem;
+			font-weight: 400;
+		}
+	}
+}
+@media (max-width: 683px) {
+	.order-design {
+		margin-top: 70px;
+		&__description {
+			padding-top: 30px;
+		}
+		&__title {
+			font-size: 2rem;
+			margin-top: 30px;
+		}
+		&__subtitle {
+			line-height: 26px;
+			font-size: 1.4rem;
+			margin-top: 20px;
+		}
+		&__button {
+			margin-top: 30px;
+		}
+	}
+}
+@media (max-width: 531px) {
+	.order-design {
+		margin-top: 60px;
+		&__description {
+			padding-top: 20px;
+		}
+		&__title {
+			font-size: 1.5rem;
+			margin-top: 30px;
+		}
+		&__subtitle {
+			line-height: 26px;
+			font-size: 1.1rem;
+			margin-top: 20px;
+		}
+		&__button {
+			margin-top: 30px;
+			font-size: 0.9rem;
+		}
+	}
+}
+@media (max-width: 405px) {
+	.order-design {
+		margin-top: 50px;
+		&__description {
+			padding-top: 16px;
+		}
+		&__title {
+			font-size: 1.3rem;
+			margin-top: 30px;
+		}
+		&__subtitle {
+			line-height: 20px;
+			font-size: 1rem;
+			margin-top: 10px;
+		}
+		&__button {
+			margin-top: 30px;
+			font-size: 0.7rem;
+		}
+	}
+}
+@media (max-width: 347px) {
+	.order-design {
+		margin-top: 40px;
+		&__description {
+			padding-top: 10px;
+		}
+		&__title {
+			font-size: 1.1rem;
+			margin-top: 30px;
+		}
+		&__subtitle {
+			line-height: 16px;
+			font-size: 0.8rem;
+			margin-top: 10px;
+		}
+		&__button {
+			margin-top: 20px;
+			font-size: 0.66rem;
+		}
+	}
+}
+//section---------.order-design-----------
+
 //section---------.portfolio-----------
 @media (max-width: 542px) {
 	.portfolio {
