@@ -715,7 +715,10 @@ body {
 }
 
 .advantages {
-	margin: 200px 0px 100px 40px;
+	margin: 90px 0px 40px 0px;
+	display: flex;
+	flex-direction: column;
+
 	&__title {
 		text-align: center;
 	}
@@ -726,6 +729,7 @@ body {
 	}
 
 	&__items {
+		margin-left: 20px;
 		padding-top: 70px;
 		display: grid;
 		gap: 10px;
