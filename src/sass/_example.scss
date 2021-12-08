@@ -828,7 +828,8 @@ body {
 
 		&__sale {
 			z-index: 3;
-			background-color: rgb(247, 159, 28);
+			background: linear-gradient(to right, rgb(255, 166, 0), rgb(255, 196, 0));
+			box-shadow: 0px 4px 20px rgba(255, 166, 0, 0.3);
 			position: absolute;
 			top: 222px;
 			left: 60px;
