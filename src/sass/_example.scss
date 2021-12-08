@@ -663,14 +663,6 @@ body {
 	position: relative;
 	padding: 0px 0% 640px 0px;
 	max-height: 360px;
-	& > img {
-		position: absolute;
-		top: 0;
-		left: -15%;
-		width: 120%;
-		height: 120%;
-		object-fit: cover;
-	}
 
 	&__body {
 		z-index: 2;
@@ -697,7 +689,7 @@ body {
 		padding: 64px 0px 0px 0px;
 		width: 46%;
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 	}
 
 	&__item {
