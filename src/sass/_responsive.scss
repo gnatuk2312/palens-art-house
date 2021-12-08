@@ -673,7 +673,7 @@
 		margin: 70px 0px 0px 0px;
 		align-items: center;
 		&__items {
-			margin: 10px;
+			margin: 0px;
 		}
 		&__title {
 			font-size: 1.8rem;
@@ -689,6 +689,9 @@
 }
 @media (max-width: 400px) {
 	.advantages {
+		&__items {
+			padding-right: 20px;
+		}
 		&__title {
 			font-size: 1.6rem;
 		}
