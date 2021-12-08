@@ -31,6 +31,9 @@
 	}
 }
 @media (max-width: 506px) {
+	.welcome {
+		margin-top: 20px;
+	}
 	.head {
 		flex-direction: column;
 	}
@@ -47,6 +50,87 @@
 	}
 }
 //section---------.head-----------
+
+//section---------.welcome-----------
+@media (max-width: 950px) {
+	.welcome {
+		flex-direction: column-reverse;
+		&__slider {
+			text-align: center;
+		}
+		&__slider-2 {
+			padding: 0px;
+		}
+	}
+}
+@media (max-width: 950px) {
+	.welcome {
+		&__description {
+			margin-top: 20px;
+		}
+	}
+}
+@media (max-width: 447px) {
+	.welcome {
+		&__order-description {
+			font-size: 0.78rem;
+		}
+		&__arrow {
+			right: -26px;
+			top: -14px;
+		}
+		&__button {
+			font-size: 1rem;
+			padding: 0px 20px 50px 20px;
+		}
+	}
+}
+@media (max-width: 407px) {
+	.welcome {
+		&__tittle {
+			text-align: center;
+			font-size: 1.4rem;
+		}
+		&__subtittle {
+			text-align: center;
+			font-size: 1.1rem;
+			margin-bottom: 12px;
+		}
+		&__item {
+			font-size: 0.9rem;
+			vertical-align: middle;
+			img {
+				width: 14px;
+				height: 14px;
+			}
+		}
+		&__order-description {
+			line-height: 16px;
+			text-align: center;
+			font-size: 0.9rem;
+			margin-top: 30px;
+		}
+		&__button {
+			font-size: 0.8rem;
+		}
+	}
+}
+@media (max-width: 358px) {
+	.welcome {
+		&__tittle {
+			text-align: center;
+			font-size: 1.3rem;
+		}
+		&__subtittle {
+			text-align: center;
+			font-size: 0.95rem;
+		}
+		&__item {
+			font-size: 0.79rem;
+		}
+	}
+}
+//section---------.welcome-----------
 
 //section---------.portfolio-----------
 @media (max-width: 542px) {
