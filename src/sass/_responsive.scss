@@ -72,9 +72,14 @@
 		&__buttons {
 			margin: 30px 30px 16px 30px;
 		}
+		&__title {
+			font-size: 1.24rem;
+			font-weight: 700;
+		}
 		&__subtitle {
 			margin-top: 10px;
-			font-size: 1.2rem;
+			font-size: 1rem;
+			font-weight: 40;
 		}
 	}
 }
@@ -199,7 +204,7 @@
 //-------------footer---------------
 @media (max-width: 1054px) {
 	footer {
-		padding: 60px 100px 60px 90px;
+		padding: 60px 40px 60px 40px;
 	}
 	.footer {
 		flex-direction: column;
@@ -246,7 +251,7 @@
 @media (max-width: 382px) {
 	.footer {
 		.contacts-big {
-			font-size: 0.9rem;
+			font-size: 0.86rem;
 		}
 		.contacts-small {
 			font-size: 0.8rem;
