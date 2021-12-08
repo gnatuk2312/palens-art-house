@@ -618,16 +618,17 @@ body {
 	}
 
 	&__buttons {
-		margin: 60px 30px 16px 30px;
+		margin: 50px 30px 16px 30px;
 		display: flex;
 		justify-content: space-around;
 		flex-wrap: wrap;
 	}
 	&__button {
+		min-width: 160px;
 		padding: 16px 28px;
-		margin: 10px 4px;
+		margin: 10px 3px;
 		border-radius: 50px;
-		font-size: 1.07rem;
+		font-size: 0.9rem;
 		border: 2px solid rgba(0, 0, 0, 0.4);
 	}
 	&__images {
@@ -640,7 +641,7 @@ body {
 	&__image {
 		position: relative;
 		padding: 0 0 85% 0;
-		min-height: 210px;
+		min-height: 260px;
 		img {
 			position: absolute;
 			top: 0;

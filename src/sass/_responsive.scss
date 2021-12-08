@@ -48,6 +48,67 @@
 }
 //section---------.head-----------
 
+//section---------.portfolio-----------
+@media (max-width: 542px) {
+	.portfolio {
+		&__title {
+			font-size: 1.15rem;
+		}
+		&__subtitle {
+			margin-top: 20px;
+			padding: 0px 20px;
+			text-align: center;
+			font-size: 1.5rem;
+		}
+	}
+}
+@media (max-width: 449px) {
+	.portfolio {
+		margin-top: 100px;
+		&__images {
+			gap: 0px;
+			margin: 0px;
+		}
+		&__buttons {
+			margin: 30px 30px 16px 30px;
+		}
+		&__subtitle {
+			margin-top: 10px;
+			font-size: 1.2rem;
+		}
+	}
+}
+@media (max-width: 419px) {
+	.portfolio {
+		&__image {
+			margin-bottom: 20px;
+			min-height: 430px;
+		}
+		&__buttons {
+			margin: 20px 30px 16px 30px;
+		}
+	}
+}
+@media (max-width: 408px) {
+	.portfolio {
+		&__button {
+			font-size: 0.8rem;
+			min-width: 130px;
+			padding: 16px 12px;
+		}
+		&__buttons {
+			margin: 20px 20px 16px 10px;
+		}
+		&__title {
+			font-size: 1.05rem;
+		}
+		&__subtitle {
+			line-height: 22px;
+		}
+	}
+}
+//section---------.portfolio-----------
+
 //section---------.sizes-----------
 @media (max-width: 853px) {
 	.sizes {
