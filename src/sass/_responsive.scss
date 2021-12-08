@@ -256,6 +256,74 @@
 }
 //section---------.order-design-----------
 
+//section---------.styles-----------
+@media (max-width: 777px) {
+	.styles {
+		margin-top: 90px;
+		&__title {
+			font-size: 1.8rem;
+			font-weight: 700;
+		}
+
+		&__subtitle {
+			font-size: 1.2rem;
+			font-weight: 400;
+			margin-top: 20px;
+			letter-spacing: 1px;
+		}
+		&__row-1 {
+			margin: 20px 20px 0px 20px;
+		}
+		&__button {
+			margin-top: 30px;
+		}
+	}
+	.row {
+		flex-wrap: wrap;
+		&__item {
+			min-width: 220px;
+		}
+	}
+}
+@media (max-width: 673px) {
+	.styles {
+		&__button {
+			margin-top: 20px;
+		}
+	}
+}
+@media (max-width: 470px) {
+	.styles {
+		&__button {
+			margin-top: 6px;
+		}
+		&__subtitle {
+			margin-top: 10px;
+			letter-spacing: 1px;
+		}
+		&__title {
+			font-size: 1.6rem;
+		}
+	}
+}
+@media (max-width: 380px) {
+	.styles {
+		&__button {
+			margin-top: 6px;
+			font-size: 0.8rem;
+		}
+		&__subtitle {
+			margin-top: 10px;
+			letter-spacing: 1px;
+			font-size: 1.1rem;
+		}
+		&__title {
+			font-size: 1.3rem;
+		}
+	}
+}
+//section---------.styles-----------
+
 //section---------.portfolio-----------
 @media (max-width: 542px) {
 	.portfolio {
