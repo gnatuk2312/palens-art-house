@@ -852,6 +852,8 @@ body {
 
 .process {
 	margin-top: 70px;
+	display: flex;
+	flex-direction: column;
 	&__title {
 		text-align: center;
 	}

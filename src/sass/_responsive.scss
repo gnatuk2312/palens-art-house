@@ -780,6 +780,143 @@
 }
 //section---------.sizes-----------
 
+//section---------.process-----------
+@media (max-width: 995px) {
+	.process {
+		&__items {
+			padding: 0px 20px 0px 0px;
+			margin-right: 10px;
+		}
+	}
+}
+@media (max-width: 799px) {
+	.process {
+		margin-top: 30px;
+		&__items {
+			padding: 0px 20px 0px 40px;
+			margin-right: 10px;
+		}
+		&__image-1 {
+			padding-top: 18px;
+			padding-left: 30px;
+		}
+		&__image-2 {
+			padding-top: 18px;
+			padding-left: 30px;
+		}
+		&__image-3 {
+			padding-left: 36px;
+		}
+		&__image-4 {
+			padding-top: 20px;
+			padding-left: 30px;
+		}
+		&__image-5 {
+			padding-top: 20px;
+			padding-left: 30px;
+		}
+		&__image-6 {
+			padding-left: 10px;
+		}
+	}
+}
+@media (max-width: 709px) {
+	.process {
+		&__items {
+			padding: 0px 20px 0px 40px;
+			margin-right: 10px;
+		}
+		&__image-1 {
+			padding-top: 18px;
+			padding-left: 0px;
+		}
+		&__image-2 {
+			padding-top: 18px;
+			padding-left: 20px;
+		}
+		&__image-3 {
+			padding-left: 6px;
+		}
+		&__image-4 {
+			padding-top: 20px;
+			padding-left: 20px;
+		}
+		&__image-5 {
+			padding-top: 20px;
+			padding-left: 0px;
+		}
+		&__image-6 {
+			padding-left: 0px;
+		}
+	}
+}
+@media (max-width: 579px) {
+	.process {
+		align-items: center;
+		margin-top: 60px;
+		&__title {
+			font-size: 1.5rem;
+			font-weight: 700;
+		}
+
+		&__subtitle {
+			padding-top: 10px;
+			font-size: 1.2rem;
+			font-weight: 400;
+		}
+		&__items {
+			padding: 0px 20px 0px 40px;
+			margin-top: 20px;
+			margin-right: 10px;
+		}
+		&__item {
+			img {
+				left: 10px;
+			}
+			p {
+				left: -20px;
+				min-width: 300px;
+			}
+		}
+		&__image-1 {
+			padding-top: 18px;
+			padding-left: 20px;
+		}
+		&__image-2 {
+			padding-top: 18px;
+			padding-left: 20px;
+		}
+		&__image-3 {
+			padding-left: 16px;
+		}
+		&__image-4 {
+			padding-top: 20px;
+			padding-left: 20px;
+		}
+		&__image-5 {
+			padding-top: 20px;
+			padding-left: 20px;
+		}
+		&__image-6 {
+			padding-left: 0px;
+		}
+	}
+}
+@media (max-width: 441px) {
+	.process {
+		&__title {
+			padding: 0px 20px;
+			font-size: 1.2rem;
+		}
+
+		&__subtitle {
+			padding: 0px 20px;
+			font-size: 1rem;
+		}
+	}
+}
+//section---------.process-----------
+
 //-------------footer---------------
 @media (max-width: 1054px) {
 	footer {
