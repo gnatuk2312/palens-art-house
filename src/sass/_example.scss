@@ -563,7 +563,7 @@ body {
 		&__select {
 			margin: 10px 0px;
 			box-shadow: 0px 5px 17px rgba(0, 0, 0, 0.2);
-			border-radius: 6px;
+			border-radius: 10px;
 			background-color: transparent;
 			padding: 10px 30px 10px 20px;
 			width: 300px;
@@ -573,23 +573,25 @@ body {
 		&__promocode {
 			margin: 26px 0px 42px 0px;
 			font-size: 1.2857rem;
-			border: 1px solid rgba(82, 82, 82, 0.3);
+			border: 1px solid rgba(82, 82, 82, 0.1);
 			box-shadow: 0px 5px 17px rgba(0, 0, 0, 0.1);
-			border-radius: 6px;
+			border-radius: 10px;
 			padding: 8px 30px 8px 20px;
 			width: 300px;
 		}
 
 		&__calc-price {
-			margin-bottom: 30px;
+			padding-bottom: 30px;
 			p {
+				padding: 0px 20px;
 				text-align: center;
 				display: table-cell;
 				vertical-align: middle;
-				width: 300px;
+				width: 90%;
 				height: 100px;
 				background-color: $bg-Color;
 				box-shadow: 6px 6px 30px #2158a03b;
+				font-size: 0.9rem;
 			}
 		}
 		&__subtitle {

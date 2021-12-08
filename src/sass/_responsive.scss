@@ -310,7 +310,10 @@
 	.styles {
 		&__button {
 			margin-top: 6px;
-			font-size: 0.8rem;
+			button {
+				font-size: 1rem;
+				padding: 16px 14px;
+			}
 		}
 		&__subtitle {
 			margin-top: 10px;
@@ -323,6 +326,164 @@
 	}
 }
 //section---------.styles-----------
+
+//section---------.popart-----------
+@media (max-width: 858px) {
+	.popart {
+		display: none;
+	}
+}
+//section---------.popart-----------
+
+//section---------.calculator-----------
+@media (max-width: 1060px) {
+	.calculator {
+		&__body {
+			padding: 0px 50px 0px 0px;
+			margin-left: 20px;
+		}
+		&__image {
+			margin-right: 20px;
+		}
+		&__subtitle {
+			font-size: 1.6rem;
+		}
+	}
+}
+@media (max-width: 768px) {
+	.calculator {
+		&__body {
+			padding: 0px 0px 0px 0px;
+			margin-left: 0px;
+		}
+		&__image {
+			display: none;
+		}
+		&__subtitle {
+			font-size: 1.3rem;
+			margin: 20px 0px 60px 0px;
+		}
+		.body {
+			&__subtitle {
+				font-size: 1.1rem;
+				letter-spacing: 1.2px;
+				padding-bottom: 20px;
+			}
+			&__select {
+				width: 80%;
+			}
+			&__promocode {
+				width: 80%;
+			}
+			&__calc-price {
+				p {
+					width: 80%;
+					font-size: 1rem;
+				}
+			}
+			&__upload {
+				width: 80%;
+			}
+			&__button {
+				width: 80%;
+				button {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	.calculator {
+		&__title {
+			font-size: 1.6rem;
+			font-weight: 700;
+		}
+		&__subtitle {
+			font-size: 1.3rem;
+			font-weight: 400;
+			margin: 20px 0px 60px 0px;
+		}
+	}
+}
+@media (max-width: 530px) {
+	.calculator {
+		&__title {
+			font-size: 1.3rem;
+			font-weight: 700;
+		}
+		&__subtitle {
+			font-size: 1rem;
+			font-weight: 400;
+			margin: 6px 0px 30px 0px;
+		}
+		.body {
+			&__subtitle {
+				font-size: 1.2rem;
+			}
+		}
+	}
+}
+@media (max-width: 410px) {
+	.calculator {
+		&__title {
+			font-size: 1.2rem;
+			font-weight: 700;
+		}
+		&__subtitle {
+			line-height: 18px;
+			font-size: 0.9rem;
+			font-weight: 400;
+			padding: 0px 20px;
+			margin: 14px 0px 30px 0px;
+		}
+
+		.body {
+			&__subtitle {
+				font-size: 1.1rem;
+			}
+			&__calc-price {
+				p {
+					font-size: 0.8rem;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 372px) {
+	.calculator {
+		.body {
+			&__upload {
+				width: 80%;
+				button {
+					font-size: 1rem;
+					padding: 14px 10px;
+				}
+				.upload-span {
+					font-size: 0.9rem;
+				}
+				img {
+					margin-right: 2px;
+				}
+			}
+			&__select {
+				font-size: 0.8rem;
+			}
+		}
+	}
+}
+@media (max-width: 372px) {
+	.calculator {
+		.body {
+			&__calc-price {
+				p {
+					font-size: 0.75rem;
+				}
+			}
+		}
+	}
+}
+//section---------.calculator-----------
 
 //section---------.portfolio-----------
 @media (max-width: 542px) {
