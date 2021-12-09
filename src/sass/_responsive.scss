@@ -1037,6 +1037,97 @@
 
 //section---------.customers-----------
 
+//section---------.consultation-----------
+@media (max-width: 826px) {
+	.consultation {
+		padding: 40px 40px;
+		&__subtitle {
+			padding-top: 10px;
+			margin-bottom: 60px;
+		}
+	}
+}
+@media (max-width: 772px) {
+	.consultation {
+		&__inputs {
+			flex-direction: column;
+		}
+		&__input-small {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		&__input-big {
+			margin-top: 0px;
+		}
+		&__title {
+			font-size: 1.6rem;
+			font-weight: 700;
+		}
+		&__subtitle {
+			font-size: 1.3rem;
+			font-weight: 400;
+			margin-bottom: 40px;
+		}
+	}
+}
+@media (max-width: 532px) {
+	.consultation {
+		padding: 40px 40px;
+		&__title {
+			font-size: 1.3rem;
+		}
+		&__subtitle {
+			font-size: 1rem;
+			margin-bottom: 30px;
+		}
+		&__button {
+			margin-top: 40px;
+			padding-bottom: 10px;
+		}
+		input {
+			padding: 14px 28px;
+		}
+	}
+}
+@media (max-width: 402px) {
+	.consultation {
+		padding: 40px 20px;
+		&__title {
+			font-size: 1.1rem;
+		}
+		&__subtitle {
+			font-size: 0.8rem;
+			margin-bottom: 30px;
+			padding-top: 16px;
+			line-height: 16px;
+		}
+		&__button {
+			margin-top: 40px;
+			padding-bottom: 10px;
+		}
+
+		&__input-small {
+			margin-bottom: 10px;
+		}
+		input {
+			font-size: 0.78rem;
+			padding: 12px 26px;
+		}
+	}
+}
+@media (max-width: 402px) {
+	.consultation {
+		&__button {
+			button {
+				font-size: 0.7rem;
+				padding: 12px 20px;
+			}
+		}
+	}
+}
+
+//section---------.consultation-----------
+
 //-------------footer---------------
 @media (max-width: 1054px) {
 	footer {
