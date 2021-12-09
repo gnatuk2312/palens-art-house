@@ -1037,6 +1037,93 @@
 
 //section---------.customers-----------
 
+//section---------.questions-----------
+@media (max-width: 816px) {
+	.questions {
+		margin-top: 70px;
+		padding: 0px 20px;
+		&__subtitle {
+			margin-top: 30px;
+		}
+		&__items {
+			margin-top: 80px;
+		}
+	}
+}
+@media (max-width: 632px) {
+	.questions {
+		&__title {
+			font-size: 1.7rem;
+			font-weight: 700;
+		}
+		&__subtitle {
+			font-size: 1.1rem;
+			font-weight: 400;
+		}
+		&__items {
+			margin-top: 60px;
+		}
+		&__question {
+			font-size: 1.1rem;
+		}
+		&__answer {
+			padding: 30px;
+			p {
+				font-size: 0.8rem;
+			}
+		}
+	}
+}
+@media (max-width: 522px) {
+	.questions {
+		margin-top: 40px;
+		&__title {
+			font-size: 1.3rem;
+		}
+		&__subtitle {
+			font-size: 0.9rem;
+			margin-top: 10px;
+		}
+		&__items {
+			margin-top: 30px;
+		}
+		&__question {
+			font-size: 0.9rem;
+		}
+		&__answer {
+			padding: 30px;
+			p {
+				font-size: 0.7rem;
+			}
+		}
+	}
+}
+@media (max-width: 406px) {
+	.questions {
+		margin-top: 40px;
+		&__title {
+			font-size: 1rem;
+		}
+		&__subtitle {
+			font-size: 0.8rem;
+			margin-top: 0px;
+		}
+		&__items {
+			margin-top: 20px;
+		}
+		&__question {
+			font-size: 0.7rem;
+		}
+		&__answer {
+			padding: 30px;
+			p {
+				font-size: 0.6rem;
+			}
+		}
+	}
+}
+//section---------.questions-----------
+
 //section---------.consultation-----------
 @media (max-width: 826px) {
 	.consultation {
