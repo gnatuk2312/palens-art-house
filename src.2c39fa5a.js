@@ -5,4 +5,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");var e=s(require("./modules/console"));function s(e){return e&&e.__esModule?e:{default:e}}window.addEventListener("DOMContentLoaded",()=>{(0,e.default)()});
 },{"./sass/main.scss":"clu1","./modules/console":"jVF8"}]},{},["Focm"], null)
-//# sourceMappingURL=/Palens-ArtHouse/src.38b4279f.js.map
+//# sourceMappingURL=/Palens-ArtHouse/src.2c39fa5a.js.map
