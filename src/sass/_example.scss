@@ -184,20 +184,24 @@ body {
 	.burger-list {
 		display: none;
 		position: absolute;
+		width: 50%;
 		top: 58px;
 		left: 0px;
-		background-color: $bg-Color;
-		border: 3px solid $bg-ColorDarker;
+		background-color: $bg-ColorDarker;
+		border: 3px solid $bg-Color;
 		&__item {
 			display: flex;
 			a {
 				padding: 30px 40px;
 				width: 100%;
-				color: black;
-				border: 3px solid $bg-ColorDarker;
+				color: $btn-Color-1;
+				font-weight: 700;
+				letter-spacing: 1.2px;
+				font-size: 1.05rem;
+				border: 3px solid $bg-Color;
 			}
 			a:hover {
-				background-color: $bg-ColorDarker;
+				background-color: $bg-Color;
 			}
 		}
 	}
@@ -897,6 +901,7 @@ body {
 	}
 	&__image-3 {
 		padding-left: 26px;
+		padding-top: 4px;
 	}
 	&__image-4 {
 		padding-top: 20px;
@@ -904,6 +909,9 @@ body {
 	&__image-5 {
 		padding-top: 20px;
 		padding-left: 10px;
+	}
+	&__image-6 {
+		padding-top: 10px;
 	}
 }
 
@@ -1203,7 +1211,7 @@ footer {
 	&__body {
 		background-color: $grey-color;
 		border-radius: 6px;
-		padding: 40px;
+		padding: 20px 40px 40px 40px;
 		text-align: center;
 		position: absolute;
 		left: 50%;
@@ -1213,6 +1221,8 @@ footer {
 		padding-top: 5px;
 		font-weight: 600;
 		letter-spacing: 0.9px;
+		line-height: 22px;
+		font-size: 1.2rem;
 	}
 	&__inputs {
 		background-color: $grey-color;
@@ -1235,6 +1245,9 @@ footer {
 
 	&__button {
 		margin-top: 40px;
+		button {
+			padding: 18px 80px;
+		}
 	}
 
 	&__close {
@@ -1245,22 +1258,23 @@ footer {
 }
 .popup-design {
 	display: none;
-
 	&__upload {
-		padding-top: 20px;
+		padding-top: 30px;
 		.upload-span {
 			display: block;
 		}
 	}
 	&__body {
-		top: 10%;
+		top: 5%;
 	}
 }
 
 .popup-consultation {
 	display: none;
-
 	&__body {
 		top: 20%;
+	}
+	.popup__input {
+		margin-bottom: 22px;
 	}
 }

@@ -787,6 +787,12 @@
 			padding: 0px 20px 0px 0px;
 			margin-right: 10px;
 		}
+		&__item {
+			p {
+				left: 10px;
+				min-width: 300px;
+			}
+		}
 	}
 }
 @media (max-width: 799px) {
@@ -808,7 +814,7 @@
 			padding-left: 36px;
 		}
 		&__image-4 {
-			padding-top: 20px;
+			padding-top: 16px;
 			padding-left: 30px;
 		}
 		&__image-5 {
@@ -817,6 +823,7 @@
 		}
 		&__image-6 {
 			padding-left: 10px;
+			padding-top: 6px;
 		}
 	}
 }
@@ -874,20 +881,20 @@
 				left: 10px;
 			}
 			p {
-				left: -20px;
+				left: -28px;
 				min-width: 300px;
 			}
 		}
 		&__image-1 {
 			padding-top: 18px;
-			padding-left: 20px;
+			padding-left: 16px;
 		}
 		&__image-2 {
 			padding-top: 18px;
 			padding-left: 20px;
 		}
 		&__image-3 {
-			padding-left: 16px;
+			padding-left: 20px;
 		}
 		&__image-4 {
 			padding-top: 20px;
@@ -1135,8 +1142,12 @@
 		padding: 40px 20px 60px 20px;
 		flex-direction: column;
 		align-items: center;
+		&__body {
+			margin-left: 0px;
+		}
 		&__image {
 			width: 50%;
+			margin-right: 40px;
 		}
 		&__title {
 			font-size: 1.7rem;
@@ -1176,6 +1187,7 @@
 		padding: 40px 20px 40px 20px;
 		&__image {
 			width: 70%;
+			margin-right: 30px;
 		}
 		&__title {
 			font-size: 1.3rem;
@@ -1198,6 +1210,7 @@
 	.design {
 		&__image {
 			width: 75%;
+			margin-right: 20px;
 		}
 		&__title {
 			font-size: 1.2rem;
@@ -1371,3 +1384,82 @@
 }
 
 //-------------footer---------------
+
+//-------------.popup-design---------------
+@media (max-height: 650px) {
+	.popup-design {
+		.popup__input {
+			padding: 14px 24px;
+		}
+		.popup__button {
+			margin-top: 20px;
+			button {
+				padding: 14px 30px;
+			}
+		}
+		.popup__title {
+			padding-top: 0px;
+		}
+		.popup__input {
+			&:first-child {
+				margin-top: 26px;
+			}
+		}
+		&__upload {
+			padding-top: 20px;
+			button {
+				padding: 12px 30px;
+			}
+		}
+	}
+}
+@media (max-width: 361px) {
+	.popup-design {
+		.popup__body {
+			padding: 30px 30px 40px 30px;
+		}
+		.popup__input {
+			padding: 14px 12px;
+		}
+		.popup__button {
+			button {
+				padding: 14px 20px;
+				font-size: 0.9rem;
+			}
+		}
+		&__upload {
+			button {
+				padding: 12px 12px;
+				font-size: 1rem;
+			}
+		}
+	}
+}
+//-------------.popup-design---------------
+
+//-------------.popup-consultation---------------
+@media (max-width: 359px) {
+	.popup-consultation {
+		.popup__input {
+			padding: 18px 26px;
+		}
+		.popup__body {
+			padding: 30px 20px 40px 30px;
+		}
+		.popup__title {
+			font-size: 1.1rem;
+		}
+	}
+}
+//-------------.popup-consultation---------------
+
+//-------------.burger-list---------------
+@media (max-width: 554px) {
+	.header-menu {
+		.burger-list {
+			width: 100%;
+		}
+	}
+}
+
+//-------------.burger-list---------------
