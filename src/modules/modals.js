@@ -16,7 +16,7 @@ const modals = () => {
 				// при натисканні на ссилку (trigger)
 				if (e.target) {
 					e.preventDefault();
-				}
+				};
 
 				windows.forEach(item => {
 					item.style.display = "none";
@@ -25,7 +25,7 @@ const modals = () => {
 				modal.style.display = 'block';
 				// Забирає скролл при відкритті модального вікна
 				document.body.style.overflow = 'hidden';
-				document.body.style.marginRight = `${scroll}px`;
+				document.body.style.paddingRight = `${scroll}px`;
 			});
 		});
 
@@ -36,7 +36,7 @@ const modals = () => {
 				modal.style.display = "none";
 				// Повертає скролл
 				document.body.style.overflow = "";
-				document.body.style.marginRight = `0px`;
+				document.body.style.paddingRight = `0px`;
 			});
 		});
 
@@ -49,7 +49,7 @@ const modals = () => {
 			if (e.target === modal) {
 				modal.style.display = "none";
 				document.body.style.overflow = "";
-				document.body.style.marginRight = `0px`;
+				document.body.style.paddingRight = `0px`;
 			}
 		});
 	}
