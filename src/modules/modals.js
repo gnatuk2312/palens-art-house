@@ -101,7 +101,7 @@ const modals = () => {
 	bindModal('.trigger-consultation', '.popup-consultation', '.popup__body .popup__close');
 	// Відкриється модальне вікно .modal через 60 секунд після того
 	// як користувач зайшов на сайт
-	showModalByTime('.popup-consultation', 60000);
+	showModalByTime('.popup-consultation', 3000);
 };
 
 export default modals;
