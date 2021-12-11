@@ -1224,6 +1224,9 @@ footer {
 		line-height: 22px;
 		font-size: 1.2rem;
 	}
+	&__subtitle {
+		padding-top: 10px;
+	}
 	&__inputs {
 		background-color: $grey-color;
 	}
@@ -1251,6 +1254,8 @@ footer {
 	}
 
 	&__close {
+		cursor: pointer;
+		z-index: 3;
 		position: absolute;
 		top: 8px;
 		right: 8px;

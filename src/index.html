@@ -29,7 +29,7 @@
 				<div class="header-menu__burger">
 					<img src="images/svg/menu.png" class="svg__big" alt="menu">
 				</div>
-				<div class="header-menu__list burger-list">
+				<div data-modal class="header-menu__list burger-list">
 					<div class="burger-list__item">
 						<a href="#styles">Картина з вашого фото</a>
 					</div>
@@ -81,7 +81,7 @@
 					</ul>
 				</div>
 				<div class="header-menu__button">
-					<button>Замовити <img src="images/svg/next.png" class="svg" alt="svg"></button>
+					<button class="trigger-design">Замовити <img src="images/svg/next.png" class="svg" alt="svg"></button>
 				</div>
 			</section>
 		</div>
@@ -139,7 +139,7 @@
 						</div>
 						<div class="welcome__order-description">Відправте фото зараз і отримайте дизайн через 1 годину</div>
 						<div class="welcome__button">
-							<button class="button-order">
+							<button class="button-order trigger-design">
 								Замовити портрет
 								<img src="images/svg/left-arrow.png" class="svg__big welcome__arrow"
 									alt="Стрілка, що вказує на кнопку Замовити">
@@ -156,10 +156,10 @@
 				</div>
 				<div class="order-design__description">
 					<p class="order-design__title title">Просто відправте фото і</p>
-					<p class="order-design__subtitle subtitle">ми вишлемо вам дизайн безкоштовно на протязі 1 години!
+					<p class="order-design__subtitle subtitle">ми вишлемо вам дизайн безкоштовно протягом 1 години!
 					</p>
 					<div class="order-design__button">
-						<button class="button-order">Замовити дизайн портрета</button>
+						<button class="button-order trigger-design">Замовити дизайн портрета</button>
 					</div>
 				</div>
 			</section>
@@ -220,7 +220,7 @@
 						<div class="popart__title title">Дивовижний портрет фліп-флап в стилі поп-арт</div>
 						<div class="popart__subtitle subtitle">Ви подаруєте яскраві емоції, запам'ятається надовго!</div>
 						<div class="popart__button">
-							<button class="button-order">Детальніше про послугу</button>
+							<button class="button-order trigger-consultation">Детальніше про послугу</button>
 						</div>
 					</div>
 				</section>
@@ -476,7 +476,7 @@
 							бажанням.
 						</p>
 						<div class="service__button">
-							<button class="button-order">Детальніше про послугу</button>
+							<button class="button-order trigger-consultation">Детальніше про послугу</button>
 						</div>
 					</div>
 				</article>
@@ -487,7 +487,7 @@
 							Ексклюзивно, якісно, ​​детальне ручне промальовування.
 						</p>
 						<div class="service__button">
-							<button class="button-order">Детальніше про послугу</button>
+							<button class="button-order trigger-consultation">Детальніше про послугу</button>
 						</div>
 					</div>
 				</article>
@@ -501,7 +501,7 @@
 							<div class="customers__image">
 								<img src="images/feedback-1.png" alt="Задоволений покупець" class="photo">
 								<div class="customers__button">
-									<button class="button-order"><span><img src="images/svg/heart.png" class="svg"
+									<button class="button-order trigger-design"><span><img src="images/svg/heart.png" class="svg"
 												alt="svg"></span> Хочу так
 										само</button>
 								</div>
@@ -526,7 +526,7 @@
 							<div class="customers__image">
 								<img src="images/feedback-2.jpg" alt="Задоволений покупець" class="photo">
 								<div class="customers__button">
-									<button class="button-order"><span><img src="images/svg/heart.png" class="svg"
+									<button class="button-order trigger-design"><span><img src="images/svg/heart.png" class="svg"
 												alt="svg"></span>Хочу так
 										само</button>
 								</div>
@@ -550,7 +550,7 @@
 							<div class="customers__image">
 								<img src="images/feedback-3.jpg" alt="Задоволений покупець" class="photo">
 								<div class="customers__button">
-									<button class="button-order"><span><img src="images/svg/heart.png" class="svg"
+									<button class="button-order trigger-design"><span><img src="images/svg/heart.png" class="svg"
 												alt="svg"></span>
 										Хочу так само
 									</button>
@@ -643,7 +643,7 @@
 						<h2 class="design__title title">Просто відправте фото і</h2>
 						<h3 class="design__subtitle subtitle">Ми вишлемо вам дизайн безкоштовно на протязі 1 години</h3>
 						<div class="design__button">
-							<button class="button-order">Замовити дизайн портрета</button>
+							<button class="button-order trigger-design">Замовити дизайн портрета</button>
 						</div>
 					</div>
 				</section>
@@ -667,7 +667,7 @@
 				</section>
 			</div>
 		</div>
-		<div class="popup-design popup">
+		<div data-modal class="popup-design popup">
 			<div class="popup-design__body popup__body">
 				<h4 class="popup-design__title popup__title">Замовити дизайн портрета</h4>
 				<div class="popup-design__upload">
@@ -689,10 +689,10 @@
 				<img src="images/svg/x.png" alt="svg" class="svg-big close popup__close">
 			</div>
 		</div>
-		<div class="popup-consultation popup">
+		<div data-modal class="popup-consultation popup">
 			<div class="popup-consultation__body popup__body">
 				<h4 class="popup-consultation__title popup__title">Залишились питання?</h4>
-				<h4 class="popup-consultation__title popup__title">Замов зворотній дзвінок</h4>
+				<h4 class="popup-consultation__subtitle popup__subtitle">Замов зворотній дзвінок</h4>
 				<div class="popup-consultation__inputs popup__inputs">
 					<input type="text" name="name" placeholder="Ваше ім'я" class="popup-consultation__input popup__input">
 					<input type="text" name="phone" placeholder="Ваш телефон" class="popup-consultation__input popup__input">
