@@ -642,6 +642,13 @@ body {
 		font-size: 0.9rem;
 		border: 2px solid rgba(0, 0, 0, 0.4);
 	}
+	&__text {
+		display: none;
+		font-size: 1.4rem;
+		text-align: center;
+		padding: 20px 10px 40px 10px;
+		line-height: 28px;
+	}
 	&__images {
 		margin: 0px 10px;
 		display: grid;
