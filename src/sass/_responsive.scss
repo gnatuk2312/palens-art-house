@@ -1479,7 +1479,123 @@
 	}
 }
 //-------------.popup-design---------------
-//-------------.popup-consultation---------------
+//-------------.popup-consultation-------------
+//-------------.popup-gift-------------
+@media (max-width: 638px) {
+	.popup-gift {
+		.popup__title {
+			font-size: 1.4rem;
+		}
+		.popup__body {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			background-color: rgba(255, 255, 255, 0.84);
+			border-radius: 0px;
+			padding-top: 14px;
+		}
+		.popup__close {
+			top: 14px;
+			right: 14px;
+		}
+	}
+}
+//-------------.popup-gift-------------
+
+//-------------.gift-button-------------
+@media (max-width: 1040px) {
+	.gift-button-a {
+		padding: 14px;
+		.gift-button__wrapper {
+			padding: 8px;
+		}
+		.gift-button__circle {
+			padding: 8px;
+		}
+		.svg-gift {
+			width: 50px;
+			height: 50px;
+		}
+	}
+}
+@media (max-width: 746px) {
+	.scroll-button {
+		right: 24px;
+		bottom: 40px;
+	}
+}
+@media (max-width: 653px) {
+	.gift-button-a {
+		padding: 12px;
+		.gift-button__wrapper {
+			padding: 6px;
+		}
+		.gift-button__circle {
+			padding: 6px;
+		}
+		.svg-gift {
+			width: 40px;
+			height: 40px;
+		}
+	}
+	.scroll-button {
+		.svg-scroll {
+			width: 20px;
+			height: 20px;
+		}
+	}
+}
+@media (max-width: 506px) {
+	.gift-animated {
+		top: 80px;
+		right: 8px;
+	}
+	.scroll-button {
+		right: 18px;
+		bottom: 26px;
+	}
+}
+@media (max-width: 426px) {
+	.gift-button-a {
+		padding: 8px;
+		.gift-button__wrapper {
+			padding: 6px;
+		}
+		.gift-button__circle {
+			padding: 6px;
+		}
+		.svg-gift {
+			width: 30px;
+			height: 30px;
+		}
+	}
+	.gift-animated {
+		top: 80px;
+		right: 6px;
+	}
+	.scroll-button {
+		.svg-scroll {
+			width: 16px;
+			height: 16px;
+		}
+	}
+}
+@media (max-width: 376px) {
+	.gift-animated {
+		top: 170px;
+		right: 8px;
+	}
+	.scroll-button {
+		right: 18px;
+		bottom: 26px;
+	}
+}
+
+//-------------.gift-button-------------
 
 //-------------.burger-list---------------
 @media (max-width: 554px) {
@@ -1489,5 +1605,4 @@
 		}
 	}
 }
-
 //-------------.burger-list---------------
