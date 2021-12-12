@@ -12,9 +12,7 @@ const modals = () => {
 			presentBtn = document.querySelector('.gift-button-a'),
 			scrollBtn = document.querySelector('.scroll-button'),
 			currentRightPresentPX = getComputedStyle(presentBtn).right,
-			currentRightPresent = Math.floor(`${currentRightPresentPX.replace(/[^0-9]/g, '')}`),
-			currentRightScrollPX = getComputedStyle(scrollBtn).right,
-			currentRightScroll = Math.floor(`${currentRightScrollPX.replace(/[^0-9]/g, '')}`);
+			currentRightPresent = Math.floor(`${currentRightPresentPX.replace(/[^0-9]/g, '')}`);
 
 
 
@@ -36,7 +34,7 @@ const modals = () => {
 				document.body.style.overflow = 'hidden';
 				document.body.style.paddingRight = `${scroll}px`;
 				presentBtn.style.right = `${currentRightPresent + scroll}px`;
-				scrollBtn.style.right = `${currentRightScroll + scroll}px`;
+				scrollBtn.style.display = "none";
 
 
 				if (deteleTrigger == true) {
@@ -56,7 +54,7 @@ const modals = () => {
 				document.body.style.overflow = "";
 				document.body.style.paddingRight = `0px`;
 				presentBtn.style.right = `${currentRightPresent}px`;
-				scrollBtn.style.right = `${currentRightScroll}px`;
+				scrollBtn.style.display = "block";
 			});
 		});
 
@@ -71,7 +69,7 @@ const modals = () => {
 				document.body.style.overflow = "";
 				document.body.style.paddingRight = `0px`;
 				presentBtn.style.right = `${currentRightPresent}px`;
-				scrollBtn.style.right = `${currentRightScroll}px`;
+				scrollBtn.style.display = "block";
 			}
 		});
 	}
