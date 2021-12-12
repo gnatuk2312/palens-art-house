@@ -1,7 +1,7 @@
 const modals = () => {
 	//  (triggerSelector, modalSelector, closeSelector) потрібні для того щою
 	// при виклику Функції в АРГУМЕНТИ вписувати тільки класи (class) об'єктів
-	function bindModal(triggerSelector, modalSelector, closeSelector) {
+	function bindModal(triggerSelector, modalSelector, closeSelector, deteleTrigger = false) {
 
 		const trigger = document.querySelectorAll(triggerSelector),
 			modal = document.querySelector(modalSelector),
@@ -37,6 +37,13 @@ const modals = () => {
 				document.body.style.paddingRight = `${scroll}px`;
 				presentBtn.style.right = `${currentRightPresent + scroll}px`;
 				scrollBtn.style.right = `${currentRightScroll + scroll}px`;
+
+
+				if (deteleTrigger == true) {
+					item.remove();
+					console.log('deleted');
+
+				}
 			});
 		});
 
@@ -114,6 +121,7 @@ const modals = () => {
 	// Просто замінюючи аргументи (класи об'єктів) 
 	bindModal('.trigger-design', '.popup-design', '.popup__body .popup__close');
 	bindModal('.trigger-consultation', '.popup-consultation', '.popup__body .popup__close');
+	bindModal('.gift-button-a', '.popup-gift', '.popup__body .popup__close', true);
 	// Відкриється модальне вікно .modal через 60 секунд після того
 	// як користувач зайшов на сайт
 	showModalByTime('.popup-consultation', 60000);
