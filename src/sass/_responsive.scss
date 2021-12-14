@@ -57,9 +57,15 @@
 		flex-direction: column-reverse;
 		&__slider {
 			text-align: center;
+			animation-name: slider-1;
+			animation-duration: 12s;
+			animation-iteration-count: infinite;
 		}
 		&__slider-2 {
 			padding: 0px;
+			animation-name: slider-2;
+			animation-duration: 12s;
+			animation-iteration-count: infinite;
 		}
 	}
 }
