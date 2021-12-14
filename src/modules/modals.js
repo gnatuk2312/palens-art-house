@@ -32,6 +32,7 @@ const modals = () => {
 				modal.style.display = 'block';
 				// Забирає скролл при відкритті модального вікна
 				document.body.style.overflow = 'hidden';
+				document.body.classList.add('overflow-hidden');
 				document.body.style.paddingRight = `${scroll}px`;
 				presentBtn.style.right = `${currentRightPresent + scroll}px`;
 				scrollBtn.style.display = "none";
@@ -52,6 +53,7 @@ const modals = () => {
 				modal.style.display = "none";
 				// Повертає скролл
 				document.body.style.overflow = "";
+				document.body.classList.remove('overflow-hidden');
 				document.body.style.paddingRight = `0px`;
 				presentBtn.style.right = `${currentRightPresent}px`;
 				scrollBtn.style.display = "block";
@@ -67,6 +69,7 @@ const modals = () => {
 			if (e.target === modal) {
 				modal.style.display = "none";
 				document.body.style.overflow = "";
+				document.body.classList.remove('overflow-hidden');
 				document.body.style.paddingRight = `0px`;
 				presentBtn.style.right = `${currentRightPresent}px`;
 				scrollBtn.style.display = "block";

@@ -95,6 +95,9 @@ body {
 }
 
 /*-----common styles-----*/
+.overflow-hidden {
+	overflow: hidden;
+}
 .container {
 	max-width: 950px;
 	margin: auto;
