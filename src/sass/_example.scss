@@ -180,6 +180,10 @@ body {
 		border-radius: 0px 14px 14px 0px;
 		cursor: pointer;
 		display: none;
+		.close-menu {
+			padding: 6px;
+			display: none;
+		}
 	}
 	.burger-list {
 		display: none;
