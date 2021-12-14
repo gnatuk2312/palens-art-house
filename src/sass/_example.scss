@@ -962,6 +962,30 @@ body {
 		justify-content: space-between;
 		padding: 80px 100px 140px 100px;
 	}
+	.container-big {
+		position: relative;
+	}
+
+	.previous {
+		position: absolute;
+		transform: translateY(-50%) rotate(-180deg);
+		top: 50%;
+		left: 4%;
+		width: 46px;
+		height: 46px;
+		cursor: pointer;
+		opacity: 0.9;
+	}
+	.next {
+		position: absolute;
+		transform: translateY(-50%);
+		top: 50%;
+		right: 4%;
+		width: 46px;
+		height: 46px;
+		cursor: pointer;
+		opacity: 0.9;
+	}
 
 	&__image {
 		margin-right: 30px;
