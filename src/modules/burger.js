@@ -1,8 +1,8 @@
 const burger = () => {
-	function showBurgerList(triggerBtn, burgerList, listItem) {
+	function showBurgerList(triggerBtn, burgerList, listItems) {
 		const trigger = document.querySelector(triggerBtn),
 			list = document.querySelector(burgerList),
-			item = document.quer
+			items = document.querySelectorAll(listItems);
 
 		trigger.addEventListener('click', () => {
 			if (list.style.display == "none") {
@@ -13,14 +13,19 @@ const burger = () => {
 				list.style.display = "none";
 				trigger.children[0].style.display = 'block';
 				trigger.children[1].style.display = 'none';
-			}
+			};
+		});
 
+		items.forEach(item => {
+			item.addEventListener('click', () => {
+				list.style.display = "none";
+				trigger.children[0].style.display = 'block';
+				trigger.children[1].style.display = 'none';
+			});
 		});
 
 
-
-
 	};
-	showBurgerList('.header-menu__burger', '.burger-list');
+	showBurgerList('.header-menu__burger', '.burger-list', '.burger-list__item');
 };
 export default burger;
