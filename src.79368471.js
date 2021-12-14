@@ -15,4 +15,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");var e=d(require("./modules/console")),s=d(require("./modules/modals")),u=d(require("./modules/uploadBtn")),o=d(require("./modules/showMoreStyles")),t=d(require("./modules/portfolioTabs")),r=d(require("./modules/questions"));function d(e){return e&&e.__esModule?e:{default:e}}window.addEventListener("DOMContentLoaded",()=>{(0,e.default)(),(0,s.default)(),(0,u.default)(),(0,o.default)(".styles__button",".styles__row-2"),(0,t.default)(),(0,r.default)()});
 },{"./sass/main.scss":"clu1","./modules/console":"jVF8","./modules/modals":"lOkp","./modules/uploadBtn":"cMrb","./modules/showMoreStyles":"tQTr","./modules/portfolioTabs":"GKVW","./modules/questions":"TCyM"}]},{},["Focm"], null)
-//# sourceMappingURL=/Palens-ArtHouse/src.4bdfdcee.js.map
+//# sourceMappingURL=/Palens-ArtHouse/src.79368471.js.map
