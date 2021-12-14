@@ -1044,6 +1044,7 @@ body {
 		padding-bottom: 6px;
 	}
 	&__answer {
+		display: none;
 		margin: 0 auto;
 		padding: 40px;
 		max-width: 700px;
@@ -1079,6 +1080,7 @@ body {
 	&__active {
 		color: $btn-Color-1;
 		border-bottom: none;
+		font-size: 1.3rem;
 	}
 }
 
