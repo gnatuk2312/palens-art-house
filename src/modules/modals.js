@@ -78,6 +78,11 @@ const modals = () => {
 	function showModalByTime(selector, time) {
 		setTimeout(function () {
 			let modalWindow;
+			const scroll = calcScroll(),
+				presentBtn = document.querySelector('.gift-button-a'),
+				scrollBtn = document.querySelector('.scroll-button'),
+				currentRightPresentPX = getComputedStyle(presentBtn).right,
+				currentRightPresent = Math.floor(`${currentRightPresentPX.replace(/[^0-9]/g, '')}`);
 			//  Атрибут data-modal потрібно записати в html для всіх 
 			// модальних вікон
 			document.querySelectorAll("[data-modal]").forEach(item => {
@@ -91,6 +96,9 @@ const modals = () => {
 			if (!modalWindow) {
 				document.querySelector(selector).style.display = 'block';
 				document.body.style.overflow = 'hidden';
+				document.body.style.paddingRight = `${scroll}px`;
+				presentBtn.style.right = `${currentRightPresent + scroll}px`;
+				scrollBtn.style.display = "none";
 			}
 
 
@@ -117,10 +125,11 @@ const modals = () => {
 	// Просто замінюючи аргументи (класи об'єктів) 
 	bindModal('.trigger-design', '.popup-design', '.popup__body .popup__close');
 	bindModal('.trigger-consultation', '.popup-consultation', '.popup__body .popup__close');
+	bindModal('.trigger', '.popup-consultation-timer', '.popup__body .popup__close');
 	bindModal('.gift-button-a', '.popup-gift', '.popup__body .popup__close', true);
 	// Відкриється модальне вікно .modal через 60 секунд після того
 	// як користувач зайшов на сайт
-	showModalByTime('.popup-consultation', 60000);
+	showModalByTime('.popup-consultation-timer', 60000);
 };
 
 export default modals;
