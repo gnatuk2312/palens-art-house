@@ -1,7 +1,8 @@
 const forms = () => {
 
 	const form = document.querySelectorAll('form'),
-		inputs = document.querySelectorAll('input');
+		inputs = document.querySelectorAll('input'),
+		upload = document.querySelectorAll('.upload');
 
 
 	const message = {
@@ -31,7 +32,23 @@ const forms = () => {
 		inputs.forEach(item => {
 			item.value = "";
 		});
+		upload.forEach(item => {
+			item.nextElementSibling.textContent = "Файл не вибрано";
+		})
 	};
+
+
+	upload.forEach(item => {
+		item.addEventListener('input', () => {
+			let dots;
+			const array = item.files[0].name.split('.');
+
+			array[0].length > 14 ? dots = '...' : dots = '.';
+			const name = array[0].substring(0, 14) + dots + array[1];
+			item.nextElementSibling.textContent = name;
+
+		});
+	});
 
 	form.forEach(item => {
 		item.addEventListener('submit', (e) => {
