@@ -39,8 +39,6 @@ const modals = () => {
 
 				if (deteleTrigger == true) {
 					item.remove();
-					console.log('deleted');
-
 				}
 			});
 		});
