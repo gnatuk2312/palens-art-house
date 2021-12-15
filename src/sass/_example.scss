@@ -962,6 +962,10 @@ body {
 		justify-content: space-between;
 		padding: 80px 100px 140px 100px;
 	}
+	&__slider:nth-child(1),
+	&__slider:nth-child(2) {
+		display: none;
+	}
 	.container-big {
 		position: relative;
 	}

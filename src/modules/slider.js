@@ -1,7 +1,7 @@
 const slider = () => {
 
-	const previousBtn = document.querySelector('.previous'),
-		nextBtn = document.querySelector('.next');
+	const previousBtn = document.querySelector('.previous-btn'),
+		nextBtn = document.querySelector('.next-btn');
 
 	let slideIndex = 1;
 	showSlides(slideIndex);
