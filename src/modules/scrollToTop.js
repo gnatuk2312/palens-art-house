@@ -8,7 +8,6 @@ const scrollToTop = () => {
 		let coords = document.documentElement.clientHeight;
 		if (scrolled > coords) {
 			button.classList.add('scroll-button-active');
-			console.log('good');
 
 		};
 		if (scrolled < coords) {

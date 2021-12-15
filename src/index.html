@@ -232,13 +232,13 @@
 				<h2 class="calculator__title title">Калькулятор</h2>
 				<h3 class="calculator__subtitle subtitle">Розрахуйте вартість і отримайте знижку 30%</h3>
 				<div class="calculator__container">
-					<div class="calculator__body body">
+					<form class="calculator__body body">
 						<h2 class="body__subtitle">Завантажте своє фото</h2>
 						<div class="body__upload">
 							<input type="file" class="upload" hidden="hidden">
-							<button class="upload-btn"><img src="images/svg/camera.png" class="svg" alt="svg">
+							<div class="upload-btn"><img src="images/svg/camera.png" class="svg" alt="svg">
 								Завантажте
-								фотографію</button>
+								фотографію</div>
 							<span class="upload-span">Файл не вибрано</span>
 						</div>
 						<select name="size" id="" class="body__select">
@@ -267,7 +267,7 @@
 						<div class="body__button">
 							<button class="button-order">Швидке замовлення</button>
 						</div>
-					</div>
+					</form>
 					<div class="calculator__image">
 						<img src="images/calculator-image.jpg" class="photo" alt="картина сучасного мистецтва">
 					</div>
@@ -669,38 +669,46 @@
 				<section class="consultation">
 					<h2 class="consultation__title title">Залишились питання?</h2>
 					<h3 class="consultation__subtitle subtitle">Отримайте консультацію безкоштовно</h3>
-					<div class="consultation__inputs">
-						<input type="text" name="name" placeholder="Ваше ім'я" class="consultation__input-small">
-						<input type="text" name="phone" placeholder="Ваш телефон" class="consultation__input-small">
-						<input type="text" name="email" placeholder="Ваш E-mail" class="consultation__input-small">
-					</div>
-					<input type="text" name="question" placeholder="Залиште ваше запитання тут"
-						class="consultation__input-big">
-					<div class="consultation__button">
-						<button class="button-order">Отримати консультацію</button>
-					</div>
+					<form action="#">
+						<div class="consultation__inputs">
+							<input type="text" name="name" placeholder="Ваше ім'я" class="consultation__input-small">
+							<input type="text" name="phone" placeholder="Ваш телефон" class="consultation__input-small">
+							<input type="text" name="email" placeholder="Ваш E-mail" class="consultation__input-small">
+						</div>
+						<input type="text" name="question" placeholder="Залиште ваше запитання тут"
+							class="consultation__input-big">
+						<div class="consultation__button">
+							<button class="button-order">Отримати консультацію</button>
+						</div>
+					</form>
 				</section>
 			</div>
 		</div>
 		<div data-modal class="popup-design popup">
 			<div class="popup-design__body popup__body">
 				<h4 class="popup-design__title popup__title">Замовити дизайн портрета</h4>
-				<div class="popup-design__upload">
-					<input type="file" class="upload popup-upload" hidden="hidden">
-					<button class="upload-btn"><img src="images/svg/camera.png" class="svg" alt="svg">
-						Завантажте
-						фотографію</button>
-					<span class="upload-span">Файл не вибрано</span>
-				</div>
-				<div class="popup-design__inputs popup__inputs">
-					<input type="text" name="name" placeholder="Ваше ім'я" class="popup-design__input popup__input">
-					<input type="text" name="phone" placeholder="Ваш телефон" class="popup-design__input popup__input">
-					<input type="text" name="email" placeholder="Ваш E-mail" class="popup-design__input popup__input">
-					<input type="text" name="question" placeholder="Коментар" class="popup-design__input popup__input">
-				</div>
-				<div class="popup-design__button popup__button">
-					<button class="button-order">Відправити дизайнеру</button>
-				</div>
+				<form action="#">
+					<div class="popup-design__upload">
+						<input type="file" class="upload popup-upload" hidden="hidden">
+						<div class="upload-btn"><img src="images/svg/camera.png" class="svg" alt="svg">
+							Завантажте
+							фотографію</div>
+						<span class="upload-span">Файл не вибрано</span>
+					</div>
+					<div class="popup-design__inputs popup__inputs">
+						<input type="text" name="name" placeholder="Ваше ім'я" class="popup-design__input popup__input">
+						<input type="text" name="phone" placeholder="Ваш телефон" class="popup-design__input popup__input">
+						<input type="text" name="email" placeholder="Ваш E-mail" class="popup-design__input popup__input">
+						<input type="text" name="question" placeholder="Коментар" class="popup-design__input popup__input">
+					</div>
+					<div class="popup-design__button popup__button">
+						<button class="button-order">Відправити дизайнеру</button>
+					</div>
+
+				</form>
+				<img src="./images/svg/spinner.gif" class="loading" alt="loading">
+				<img src="./images/svg/success.png" class="success" alt="success">
+				<img src="./images/svg/failure.png" class="failure" alt="failure">
 				<img src="images/svg/x.png" alt="svg" class="svg-big close popup__close">
 			</div>
 		</div>
@@ -708,13 +716,19 @@
 			<div class="popup-consultation__body popup__body">
 				<h4 class="popup-consultation__title popup__title">Залишились питання?</h4>
 				<h4 class="popup-consultation__subtitle popup__subtitle">Замов зворотній дзвінок</h4>
-				<div class="popup-consultation__inputs popup__inputs">
-					<input type="text" name="name" placeholder="Ваше ім'я" class="popup-consultation__input popup__input">
-					<input type="text" name="phone" placeholder="Ваш телефон" class="popup-consultation__input popup__input">
-				</div>
-				<div class="popup-consultation__button popup__button">
-					<button class="button-order">Замовити</button>
-				</div>
+				<form action="#">
+					<div class="popup-consultation__inputs popup__inputs">
+						<input type="text" name="name" placeholder="Ваше ім'я" class="popup-consultation__input popup__input">
+						<input type="text" name="phone" placeholder="Ваш телефон"
+							class="popup-consultation__input popup__input">
+					</div>
+					<div class="popup-consultation__button popup__button">
+						<button class="button-order">Замовити</button>
+					</div>
+				</form>
+				<img src="./images/svg/spinner.gif" class="loading" alt="loading">
+				<img src="./images/svg/success.png" class="success" alt="success">
+				<img src="./images/svg/failure.png" class="failure" alt="failure">
 				<img src="images/svg/x.png" alt="svg" class="svg-big close popup__close">
 			</div>
 		</div>

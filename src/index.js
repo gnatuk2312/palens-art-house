@@ -9,6 +9,7 @@ import questions from './modules/questions';
 import burger from './modules/burger';
 import slider from "./modules/slider";
 import scrollToTop from './modules/scrollToTop';
+import forms from './modules/formData';
 
 window.addEventListener('DOMContentLoaded', () => {
 	"use strict"
@@ -21,4 +22,5 @@ window.addEventListener('DOMContentLoaded', () => {
 	burger();
 	slider('.customers__slider', '.previous-btn', '.next-btn');
 	scrollToTop();
+	forms();
 });
