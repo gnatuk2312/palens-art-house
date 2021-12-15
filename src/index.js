@@ -8,6 +8,7 @@ import portfolioTabs from './modules/portfolioTabs';
 import questions from './modules/questions';
 import burger from './modules/burger';
 import slider from "./modules/slider";
+import scrollToTop from './modules/scrollToTop';
 
 window.addEventListener('DOMContentLoaded', () => {
 	"use strict"
@@ -19,4 +20,5 @@ window.addEventListener('DOMContentLoaded', () => {
 	questions();
 	burger();
 	slider();
+	scrollToTop();
 });

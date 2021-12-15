@@ -1412,6 +1412,7 @@ footer {
 }
 
 .scroll-button {
+	display: none;
 	position: fixed;
 	z-index: 2;
 	right: 30px;
@@ -1427,6 +1428,9 @@ footer {
 		width: 24px;
 		height: 24px;
 	}
+}
+.scroll-button-active {
+	display: block;
 }
 .scroll-button {
 	animation-name: scroll-rotate;
