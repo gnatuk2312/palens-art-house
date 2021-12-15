@@ -604,18 +604,13 @@ body {
 
 		&__calc-price {
 			text-align: center;
-			padding-bottom: 30px;
-			p {
-				padding: 0px 20px;
-				text-align: center;
-				display: table-cell;
-				vertical-align: middle;
-				width: 90%;
-				height: 100px;
-				background-color: $bg-Color;
-				box-shadow: 6px 6px 30px #2158a03b;
-				font-size: 0.9rem;
-			}
+			padding: 30px 10px;
+			margin-bottom: 30px;
+			width: 80%;
+			background-color: $bg-Color;
+			box-shadow: 6px 6px 30px #2158a03b;
+			font-size: 1.2rem;
+			line-height: 18px;
 		}
 		&__subtitle {
 			font-size: 1.2857rem;

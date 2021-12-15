@@ -10,6 +10,7 @@ import burger from './modules/burger';
 import slider from "./modules/slider";
 import scrollToTop from './modules/scrollToTop';
 import forms from './modules/formData';
+import calculator from './modules/calculator';
 
 window.addEventListener('DOMContentLoaded', () => {
 	"use strict"
@@ -23,4 +24,5 @@ window.addEventListener('DOMContentLoaded', () => {
 	slider('.customers__slider', '.previous-btn', '.next-btn');
 	scrollToTop();
 	forms();
+	calculator('#size', '#material', '#options', '.body__promocode', '.body__calc-price');
 });
