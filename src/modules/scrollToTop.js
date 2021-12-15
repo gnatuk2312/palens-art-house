@@ -16,14 +16,14 @@ const scrollToTop = () => {
 		};
 	});
 
-	button.addEventListener('click', backToTop);
-
 	function backToTop() {
 		if (window.pageYOffset > 0) {
 			window.scrollBy(0, -60);
 			setTimeout(backToTop, 0);
 		};
 	};
+
+	button.addEventListener('click', backToTop);
 
 
 };

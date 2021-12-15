@@ -7,12 +7,6 @@ const slider = () => {
 	showSlides(slideIndex);
 
 
-	function nextSlide() {
-		showSlides(slideIndex += 1);
-	}
-	function previousSlide() {
-		showSlides(slideIndex -= 1);
-	}
 	function currentSlide(n) {
 		showSlides(slideIndex = n);
 	}
@@ -35,10 +29,10 @@ const slider = () => {
 
 	currentSlide(1);
 	previousBtn.addEventListener('click', () => {
-		previousSlide();
+		showSlides(slideIndex -= 1);
 	});
 	nextBtn.addEventListener('click', () => {
-		nextSlide();
+		showSlides(slideIndex += 1);
 	});
 
 
