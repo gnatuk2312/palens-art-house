@@ -1,39 +1,44 @@
-const slider = () => {
-
-	const previousBtn = document.querySelector('.previous-btn'),
-		nextBtn = document.querySelector('.next-btn');
+const slider = (slides, previous, next) => {
 
 	let slideIndex = 1;
-	showSlides(slideIndex);
+	const items = document.querySelectorAll(slides);
 
-
-	function currentSlide(n) {
-		showSlides(slideIndex = n);
-	}
 
 	function showSlides(n) {
-		let slides = document.getElementsByClassName("customers__slider");
-		if (n > slides.length) {
-			slideIndex = 1
-		}
-		if (n < 1) {
-			slideIndex = slides.length
+		if (n > items.length) {
+			slideIndex = 1;
 		}
 
-		for (let slide of slides) {
-			slide.style.display = "none";
+		if (n < 1) {
+			slideIndex = items.length;
 		}
-		slides[slideIndex - 1].style.display = "block";
+
+		items.forEach(item => {
+			item.style.display = "none";
+		});
+
+		items[slideIndex - 1].style.display = 'block';
 	};
 
+	showSlides(slideIndex);
 
-	currentSlide(1);
-	previousBtn.addEventListener('click', () => {
-		showSlides(slideIndex -= 1);
-	});
-	nextBtn.addEventListener('click', () => {
-		showSlides(slideIndex += 1);
-	});
+	function plusSlides(n) {
+		showSlides(slideIndex += n);
+	}
+
+	try {
+		const prevBtn = document.querySelector(previous),
+			nextBtn = document.querySelector(next);
+
+		prevBtn.addEventListener('click', () => {
+			plusSlides(-1);
+		});
+
+		nextBtn.addEventListener('click', () => {
+			plusSlides(1);
+		});
+	}
+	catch (e) { }
 
 
 }

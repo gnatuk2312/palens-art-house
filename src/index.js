@@ -19,6 +19,6 @@ window.addEventListener('DOMContentLoaded', () => {
 	portfolioTabs();
 	questions();
 	burger();
-	slider();
+	slider('.customers__slider', '.previous-btn', '.next-btn');
 	scrollToTop();
 });
