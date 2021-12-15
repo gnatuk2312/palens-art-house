@@ -18,7 +18,7 @@ const scrollToTop = () => {
 
 	function backToTop() {
 		if (window.pageYOffset > 0) {
-			window.scrollBy(0, -60);
+			window.scrollBy(0, -110);
 			setTimeout(backToTop, 0);
 		};
 	};
