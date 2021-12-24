@@ -76,6 +76,9 @@ h6 {
 	font-size: inherit;
 	font-weight: inherit;
 }
+address {
+	font-style: normal;
+}
 /*-----------------------*/
 
 /*---------Variables--------------*/
@@ -719,11 +722,13 @@ body {
 		width: 40%;
 		padding: 58px 0px 0px 14px;
 		line-height: 18px;
+		max-width: 1175px;
 	}
 
 	&__items {
 		padding: 64px 0px 0px 0px;
-		width: 46%;
+		width: 42%;
+
 		display: flex;
 		justify-content: space-around;
 	}

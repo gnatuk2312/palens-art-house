@@ -5,6 +5,7 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>palen site</title>
+	<link rel="icon" type="image/x-icon" href="./images/svg/palen.ico">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
@@ -20,273 +21,286 @@
 	<!--     <include src="./partials/example.html"></include>     -->
 
 	<header class="header">
-		<div class="container-big">
-			<section class="header-menu">
-				<div class="header-menu__catalog">
-					<p>PALEN</p>
-				</div>
-				<!--     		BURGER MENU     -->
-				<div class="header-menu__burger">
-					<img src="images/svg/menu.png" class="svg__big menu" alt="menu">
-					<img src="images/svg/close.png" class="svg__big close-menu" alt="close-menu">
-				</div>
-				<div data-modal class="header-menu__list burger-list" style="display: none;">
-					<div class="burger-list__item">
-						<a href="#styles">Картина з вашого фото</a>
+		<section class="header-menu-section">
+			<div class="container-big">
+				<div class="header-menu">
+					<div class="header-menu__catalog">
+						<p>PALEN</p>
 					</div>
-					<div class="burger-list__item">
-						<a href="#portfolio">Готові картини</a>
+					<!--     		BURGER MENU     -->
+					<div class="header-menu__burger">
+						<img src="images/svg/menu.png" class="svg__big menu" alt="menu">
+						<img src="images/svg/close.png" class="svg__big close-menu" alt="close-menu">
 					</div>
-					<div class="burger-list__item">
-						<a href="#customers">Ідеї для подарунку</a>
+					<div data-modal class="header-menu__list burger-list" style="display: none;">
+						<div class="burger-list__item">
+							<a href="#styles">Картина з вашого фото</a>
+						</div>
+						<div class="burger-list__item">
+							<a href="#portfolio">Готові картини</a>
+						</div>
+						<div class="burger-list__item">
+							<a href="#customers">Ідеї для подарунку</a>
+						</div>
+						<div class="burger-list__item">
+							<a href="#FAQ">FAQ</a>
+						</div>
 					</div>
-					<div class="burger-list__item">
-						<a href="#FAQ">FAQ</a>
+					<!--     		BURGER MENU     -->
+					<div class="header-menu__item header-menu__item-1">
+						Картина з вашого фото
+						<span class="header-menu__arrow"> </span>
+						<ul class="header-menu__sub-list">
+							<li><a class="header-menu__link" href="#styles">Портрет маслом</a></li>
+							<li><a class="header-menu__link" href="#styles">Портрет пастелюю</a></li>
+							<li><a class="header-menu__link" href="#styles">Портрет аквареллю</a></li>
+						</ul>
+					</div>
+					<div class="header-menu__item header-menu__item-2">
+						Готові картини
+						<span class="header-menu__arrow"> </span>
+						<ul class="header-menu__sub-list">
+							<li><a class="header-menu__link" href="#portfolio">Для дівчини</a></li>
+							<li><a class="header-menu__link" href="#portfolio">Для хлопця</a></li>
+							<li><a class="header-menu__link" href="#portfolio">Інше...</a></li>
+						</ul>
+					</div>
+					<div class="header-menu__item header-menu__item-3">
+						Ідеї для подарунку
+						<span class="header-menu__arrow"> </span>
+						<ul class="header-menu__sub-list">
+							<li><a class="header-menu__link" href="#customers">Готові картини</a></li>
+							<li><a class="header-menu__link" href="#customers">Відгуки клієнтів</a></li>
+						</ul>
+					</div>
+					<div class="header-menu__item header-menu__item-4">
+						FAQ
+						<span class="header-menu__arrow"> </span>
+						<ul class="header-menu__sub-list">
+							<li><a class="header-menu__link" href="#FAQ">Термінове виготовлення</a></li>
+							<li><a class="header-menu__link" href="#FAQ">Доставка і оплата</a></li>
+							<li><a class="header-menu__link" href="#FAQ">Схема роботи</a></li>
+							<li><a class="header-menu__link" href="#FAQ">Контакти</a></li>
+						</ul>
+					</div>
+					<div class="header-menu__button">
+						<button class="trigger-design">Замовити <img src="images/svg/next.png" class="svg" alt="svg"></button>
 					</div>
 				</div>
-				<!--     		BURGER MENU     -->
-				<div class="header-menu__item header-menu__item-1">
-					Картина з вашого фото
-					<span class="header-menu__arrow"> </span>
-					<ul class="header-menu__sub-list">
-						<li><a class="header-menu__link" href="#styles">Портрет маслом</a></li>
-						<li><a class="header-menu__link" href="#styles">Портрет пастелюю</a></li>
-						<li><a class="header-menu__link" href="#styles">Портрет аквареллю</a></li>
-					</ul>
-				</div>
-				<div class="header-menu__item header-menu__item-2">
-					Готові картини
-					<span class="header-menu__arrow"> </span>
-					<ul class="header-menu__sub-list">
-						<li><a class="header-menu__link" href="#portfolio">Для дівчини</a></li>
-						<li><a class="header-menu__link" href="#portfolio">Для хлопця</a></li>
-						<li><a class="header-menu__link" href="#portfolio">Інше...</a></li>
-					</ul>
-				</div>
-				<div class="header-menu__item header-menu__item-3">
-					Ідеї для подарунку
-					<span class="header-menu__arrow"> </span>
-					<ul class="header-menu__sub-list">
-						<li><a class="header-menu__link" href="#customers">Готові картини</a></li>
-						<li><a class="header-menu__link" href="#customers">Відгуки клієнтів</a></li>
-					</ul>
-				</div>
-				<div class="header-menu__item header-menu__item-4">
-					FAQ
-					<span class="header-menu__arrow"> </span>
-					<ul class="header-menu__sub-list">
-						<li><a class="header-menu__link" href="#FAQ">Термінове виготовлення</a></li>
-						<li><a class="header-menu__link" href="#FAQ">Доставка і оплата</a></li>
-						<li><a class="header-menu__link" href="#FAQ">Схема роботи</a></li>
-						<li><a class="header-menu__link" href="#FAQ">Контакти</a></li>
-					</ul>
-				</div>
-				<div class="header-menu__button">
-					<button class="trigger-design">Замовити <img src="images/svg/next.png" class="svg" alt="svg"></button>
-				</div>
-			</section>
-		</div>
+			</div>
+		</section>
 	</header>
 
 	<main class="main">
-		<div class="background">
-			<div class="container">
-				<section class="head">
-					<div class="head__company">
-						<div class="head__company-name">Palen`s ArtHouse</div>
-						<div class="head__company-subtitle">Перетвори фотографію в справжню картину</div>
-					</div>
-					<div class="head__phones">
-						<div class="head__mobile">
-							<img src="images/svg/24-hours.png" class="svg" alt="Цілодобово">
-							<a href="tel:+380981312888">+38 (098) 13-12-888</a>
+		<section class="welcome-section">
+			<div class="background">
+				<div class="container">
+					<article class="head">
+						<div class="head__company">
+							<h2 class="head__company-name">Palen`s ArtHouse</h2>
+							<h3 class="head__company-subtitle">Перетвори фотографію в справжню картину</h3>
 						</div>
-						<div class="head__social">
-							<img src="images/svg/telephone-call.png" class="svg" alt="Номер телефону">
-							<img src="images/svg/telegram.png" class="svg" alt="Телеграм">
-							<a href="tel:+380672312000">+38 (067) 23-12-000</a>
-						</div>
-					</div>
-				</section>
-				<section class="welcome">
-					<div class="welcome__sliders">
-						<div class="welcome__slider welcome__slider-1">
-							<img src="images/main-slider-1.png" alt="Задоволений покупець з картиною в руках">
-						</div>
-						<div class="welcome__slider welcome__slider-2">
-							<img src="images/main-slider-2.png" alt="Задоволений покупець з картиною в руках">
-						</div>
-					</div>
-					<div class="welcome__description">
-						<div class="welcome__subtittle">Найкращий подарунок для кожного</div>
-						<div class="welcome__tittle">Портрет на полотні</div>
-						<div class="welcome__advantages">
-							<div class="welcome__item">
-								<img src="images/svg/check-mark.png" class="svg" alt="svg">
-								<p>Гарантія мінімальної ціни</p>
+						<nav class="head__phones">
+							<address class="head__mobile">
+								<img src="images/svg/24-hours.png" class="svg" alt="Цілодобово">
+								<a href="tel:+380981312888">+38 (098) 13-12-888</a>
+							</address>
+							<address class="head__social">
+								<img src="images/svg/telephone-call.png" class="svg" alt="Номер телефону">
+								<img src="images/svg/telegram.png" class="svg" alt="Телеграм">
+								<a href="tel:+380672312000">+38 (067) 23-12-000</a>
+							</address>
+						</nav>
+					</article>
+					<section class="welcome">
+						<div class="welcome__sliders">
+							<div class="welcome__slider welcome__slider-1">
+								<img src="images/main-slider-1.png" alt="Задоволений покупець з картиною в руках">
 							</div>
-							<div class="welcome__item">
-								<img src="images/svg/check-mark.png" class="svg" alt="svg">
-								<p>На 30% дешевше конкурентів</p>
-							</div>
-							<div class="welcome__item">
-								<img src="images/svg/check-mark.png" class="svg" alt="svg">
-								<p>При замовленні з сайта до 30% знижки</p>
-							</div>
-							<div class="welcome__item">
-								<img src="images/svg/check-mark.png" class="svg" alt="svg">
-								<p>Термінове виготовлення за 3 години</p>
+							<div class="welcome__slider welcome__slider-2">
+								<img src="images/main-slider-2.png" alt="Задоволений покупець з картиною в руках">
 							</div>
 						</div>
-						<div class="welcome__order-description">Відправте фото зараз і отримайте дизайн через 1 годину</div>
-						<div class="welcome__button">
-							<button class="button-order trigger-design">
-								Замовити портрет
-								<img src="images/svg/left-arrow.png" class="svg__big welcome__arrow"
-									alt="Стрілка, що вказує на кнопку Замовити">
-							</button>
+						<div class="welcome__description">
+							<h3 class="welcome__subtittle">Найкращий подарунок для кожного</h3>
+							<h2 class="welcome__tittle">Портрет на полотні</h2>
+							<ul class="welcome__advantages">
+								<li class="welcome__item">
+									<img src="images/svg/check-mark.png" class="svg" alt="svg">
+									<p>Гарантія мінімальної ціни</p>
+								</li>
+								<li class="welcome__item">
+									<img src="images/svg/check-mark.png" class="svg" alt="svg">
+									<p>На 30% дешевше конкурентів</p>
+								</li>
+								<li class="welcome__item">
+									<img src="images/svg/check-mark.png" class="svg" alt="svg">
+									<p>При замовленні з сайта до 30% знижки</p>
+								</li>
+								<li class="welcome__item">
+									<img src="images/svg/check-mark.png" class="svg" alt="svg">
+									<p>Термінове виготовлення за 3 години</p>
+								</li>
+							</ul>
+							<p class="welcome__order-description">Відправте фото зараз і отримайте дизайн через 1 годину
+							</p>
+							<div class="welcome__button">
+								<button class="button-order trigger-design">
+									Замовити портрет
+									<img src="images/svg/left-arrow.png" class="svg__big welcome__arrow"
+										alt="Стрілка, що вказує на кнопку Замовити">
+								</button>
+							</div>
 						</div>
-					</div>
-				</section>
+					</section>
+				</div>
 			</div>
-		</div>
-		<div class=" container">
-			<section class="order-design">
-				<div class="order-design__photo">
-					<img src="images/order-design.jpg" class="photo" alt="Приклад зробленого портрету">
-				</div>
-				<div class="order-design__description">
-					<p class="order-design__title title">Просто відправте фото і</p>
-					<p class="order-design__subtitle subtitle">ми вишлемо вам дизайн безкоштовно протягом 1 години!
-					</p>
-					<div class="order-design__button">
-						<button class="button-order trigger-design">Замовити дизайн портрета</button>
+		</section>
+		<section class="order-design-section">
+			<div class=" container">
+				<div class="order-design">
+					<div class="order-design__photo">
+						<img src="images/order-design.jpg" class="photo" alt="Приклад зробленого портрету">
 					</div>
-				</div>
-			</section>
-		</div>
-		<div class="container">
-			<section class="styles" id="styles">
-				<div class="styles__title title">Портрет на полотні</div>
-				<div class="styles__subtitle subtitle">Популярні стилі</div>
-				<div class="styles__row-1 row">
-					<div class="row__item">
-						<img src="images/oil-made.jpg" class="photo" alt="Картина маслом">
-						<p>Маслом</p>
-					</div>
-					<div class="row__item">
-						<img src="images/acvarel-made.jpg" class="photo" alt="Картина аквареллю">
-						<p>Аквареллю</p>
-					</div>
-					<div class="row__item">
-						<img src="images/pencil-made.jpg" class="photo" alt="Картина олівцем">
-						<p>Олівцем</p>
-					</div>
-					<div class="row__item">
-						<img src="images/pastel-made.jpg" class="photo" alt="Картина пастеллю">
-						<p>Пастеллю</p>
-					</div>
-				</div>
-				<div class="styles__row-2 row">
-					<div class="row__item">
-						<img src="images/popart-made.jpg" class="photo" alt="Картина в стилі поп-арт">
-						<p>Поп-арт</p>
-					</div>
-					<div class="row__item">
-						<img src="images/anime-made.jpg" class="photo" alt="Картина в стилі аніме">
-						<p>Аніме</p>
-					</div>
-					<div class="row__item">
-						<img src="images/mozaika-made.jpg" class="photo" alt="Картина в стилі фотомозаїка">
-						<p>Фотомозаїка</p>
-					</div>
-					<div class="row__item">
-						<img src="images/pen-made.jpg" class="photo" alt="Картина ручкою">
-						<p>Ручкою</p>
-					</div>
-				</div>
-				<div class="styles__button">
-					<button class="button-order-white"><img src="images/svg/sync.png" class="svg" alt="svg">Подивитись
-						більше стилів</button>
-				</div>
-			</section>
-		</div>
-		<div class="background">
-			<div class="container">
-				<section class="popart">
-					<div class="popart__image">
-						<img src="images/popart.jpg" class="photo" alt="popart image">
-					</div>
-					<div class="popart__description">
-						<div class="popart__title title">Дивовижний портрет фліп-флап в стилі поп-арт</div>
-						<div class="popart__subtitle subtitle">Ви подаруєте яскраві емоції, запам'ятається надовго!</div>
-						<div class="popart__button">
-							<button class="button-order trigger-consultation">Детальніше про послугу</button>
+					<div class="order-design__description">
+						<h2 class="order-design__title title">Просто відправте фото і</h2>
+						<h3 class="order-design__subtitle subtitle">ми вишлемо вам дизайн безкоштовно протягом 1 години!
+						</h3>
+						<div class="order-design__button">
+							<button class="button-order trigger-design">Замовити дизайн портрета</button>
 						</div>
 					</div>
-				</section>
+				</div>
 			</div>
-		</div>
-		<div class="container">
-			<section class="calculator">
-				<h2 class="calculator__title title">Калькулятор</h2>
-				<h3 class="calculator__subtitle subtitle">Розрахуйте вартість і отримайте знижку 30%</h3>
-				<div class="calculator__container">
-					<form class="calculator__body body">
-						<h2 class="body__subtitle">Завантажте своє фото</h2>
-						<div class="body__upload">
-							<div class="upload-btn"><img src="images/svg/camera.png" class="svg" alt="svg">
-								Завантажте
-								фотографію</div>
-							<input type="file" class="upload" hidden="hidden">
-							<span class="upload-span">Файл не вибрано</span>
+		</section>
+		<section class="styles-section">
+			<div class="container">
+				<div class="styles" id="styles">
+					<h2 class="styles__title title">Портрет на полотні</h2>
+					<h3 class="styles__subtitle subtitle">Популярні стилі</h3>
+					<div class="styles__row-1 row">
+						<div class="row__item">
+							<img src="images/oil-made.jpg" class="photo" alt="Картина маслом">
+							<p>Маслом</p>
 						</div>
-						<select name="size" id="size" class="body__select">
-							<option value="">Виберіть розмір картини</option>
-							<option value="2569">40х50</option>
-							<option value="2919">50х70</option>
-							<option value="3472">70х70</option>
-							<option value="3794">70х100</option>
-						</select>
-						<select name="material" id="material" class="body__select">
-							<option value="">Виберіть матеріал картини</option>
-							<option value="1">Полотно з волокна</option>
-							<option value="1.2">Лянне полотно</option>
-							<option value="1.5">Полотно з натуральної бавовни</option>
-						</select>
-						<select name="additional" id="options" class="body__select">
-							<option value="0">Додаткові послуги</option>
-							<option value="120">Покриття арт-гелем</option>
-							<option value="250">Експресс-виготовлення</option>
-							<option value="74">Доставка готових робіт</option>
-						</select>
-						<input type="text" placeholder="Введіть промокод" class="body__promocode">
-						<div class="body__calc-price">
-							Виберіть розмір і матеріал картини
+						<div class="row__item">
+							<img src="images/acvarel-made.jpg" class="photo" alt="Картина аквареллю">
+							<p>Аквареллю</p>
 						</div>
-						<div class="body__button">
-							<button class="button-order">Швидке замовлення</button>
+						<div class="row__item">
+							<img src="images/pencil-made.jpg" class="photo" alt="Картина олівцем">
+							<p>Олівцем</p>
 						</div>
-					</form>
-					<div class="calculator__image">
-						<img src="images/calculator-image.jpg" class="photo" alt="картина сучасного мистецтва">
+						<div class="row__item">
+							<img src="images/pastel-made.jpg" class="photo" alt="Картина пастеллю">
+							<p>Пастеллю</p>
+						</div>
+					</div>
+					<div class="styles__row-2 row">
+						<div class="row__item">
+							<img src="images/popart-made.jpg" class="photo" alt="Картина в стилі поп-арт">
+							<p>Поп-арт</p>
+						</div>
+						<div class="row__item">
+							<img src="images/anime-made.jpg" class="photo" alt="Картина в стилі аніме">
+							<p>Аніме</p>
+						</div>
+						<div class="row__item">
+							<img src="images/mozaika-made.jpg" class="photo" alt="Картина в стилі фотомозаїка">
+							<p>Фотомозаїка</p>
+						</div>
+						<div class="row__item">
+							<img src="images/pen-made.jpg" class="photo" alt="Картина ручкою">
+							<p>Ручкою</p>
+						</div>
+					</div>
+					<div class="styles__button">
+						<button class="button-order-white"><img src="images/svg/sync.png" class="svg" alt="svg">Подивитись
+							більше стилів</button>
 					</div>
 				</div>
-			</section>
-		</div>
+			</div>
+		</section>
+		<section class="popart-section">
+			<div class="background">
+				<div class="container">
+					<div class="popart">
+						<div class="popart__image">
+							<img src="images/popart.jpg" class="photo" alt="popart image">
+						</div>
+						<div class="popart__description">
+							<h2 class="popart__title title">Дивовижний портрет фліп-флап в стилі поп-арт</h2>
+							<h3 class="popart__subtitle subtitle">Ви подаруєте яскраві емоції, запам'ятається надовго!</h3>
+							<div class="popart__button">
+								<button class="button-order trigger-consultation">Детальніше про послугу</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="calculator-section">
+			<div class="container">
+				<div class="calculator">
+					<h2 class="calculator__title title">Калькулятор</h2>
+					<h3 class="calculator__subtitle subtitle">Розрахуйте вартість і отримайте знижку 30%</h3>
+					<div class="calculator__container">
+						<form class="calculator__body body">
+							<h4 class="body__subtitle">Завантажте своє фото</h4>
+							<div class="body__upload">
+								<div class="upload-btn"><img src="images/svg/camera.png" class="svg" alt="svg">
+									Завантажте
+									фотографію</div>
+								<input type="file" class="upload" hidden="hidden">
+								<span class="upload-span">Файл не вибрано</span>
+							</div>
+							<select name="size" id="size" class="body__select">
+								<option value="">Виберіть розмір картини</option>
+								<option value="2569">40х50</option>
+								<option value="2919">50х70</option>
+								<option value="3472">70х70</option>
+								<option value="3794">70х100</option>
+							</select>
+							<select name="material" id="material" class="body__select">
+								<option value="">Виберіть матеріал картини</option>
+								<option value="1">Полотно з волокна</option>
+								<option value="1.2">Лянне полотно</option>
+								<option value="1.5">Полотно з натуральної бавовни</option>
+							</select>
+							<select name="additional" id="options" class="body__select">
+								<option value="0">Додаткові послуги</option>
+								<option value="120">Покриття арт-гелем</option>
+								<option value="250">Експресс-виготовлення</option>
+								<option value="74">Доставка готових робіт</option>
+							</select>
+							<input type="text" placeholder="Введіть промокод" class="body__promocode">
+							<div class="body__calc-price">
+								Виберіть розмір і матеріал картини
+							</div>
+							<div class="body__button">
+								<button class="button-order">Швидке замовлення</button>
+							</div>
+						</form>
+						<div class="calculator__image">
+							<img src="images/calculator-image.jpg" class="photo" alt="картина сучасного мистецтва">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<section class="portfolio" id="portfolio">
 			<div class="container">
 				<h2 class="portfolio__title title">Приклади робіт</h2>
 				<h3 class="portfolio__subtitle subtitle">Для кого ми робимо портрет?</h3>
 			</div>
-			<div class="portfolio__buttons">
-				<button class="portfolio__button all active-button">Всі роботи</button>
-				<button class="portfolio__button lovers">Для закоханих</button>
-				<button class="portfolio__button girls">Для дівчат</button>
-				<button class="portfolio__button boys">Для хлопців</button>
-				<button class="portfolio__button grandma">Для бабусь</button>
-				<button class="portfolio__button grandpa">Для дідусів</button>
-			</div>
+			<ul class="portfolio__buttons">
+				<li><button class="portfolio__button all active-button">Всі роботи</button></li>
+				<li><button class="portfolio__button lovers">Для закоханих</button></li>
+				<li><button class="portfolio__button girls">Для дівчат</button></li>
+				<li><button class="portfolio__button boys">Для хлопців</button></li>
+				<li><button class="portfolio__button grandma">Для бабусь</button></li>
+				<li><button class="portfolio__button grandpa">Для дідусів</button></li>
+			</ul>
 
 			<div class="portfolio__images">
 				<div class="portfolio__image">
@@ -341,59 +355,61 @@
 					безпеку свого
 					подарунка! Такий приємний презент ідеально впишеться в ітер'єр
 				</p>
-				<div class="best-present__items">
-					<div class="best-present__item">
+				<ul class="best-present__items">
+					<li class="best-present__item">
 						<img src="images/gift-1.png" alt="маленька картинка">
 						<p>Подарунок зі смаком</p>
-					</div>
-					<div class="best-present__item">
+					</li>
+					<li class="best-present__item">
 						<img src="images/gift-2.png" alt="маленька картинка">
 						<p> Завжди буде в тренді</p>
-					</div>
-					<div class="best-present__item">
+					</li>
+					<li class="best-present__item">
 						<img src="images/gift-3.png" alt="маленька картинка">
 						<p>Всі будуть в захваті</p>
-					</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="advantages-section">
+			<div class="container-big">
+				<div class="advantages">
+					<h2 class="advantages__title title">Наші переваги</h2>
+					<h3 class="advantages__subtitle subtitle">Чому вибирають саме нас?</h3>
+					<ul class="advantages__items">
+						<li class="advantages__item">
+							<img src="images/features-1.png" class="advantages__image-1" alt="Наші сильні сторони">
+							<p>Натуральне полотно і найкращі фарби</p>
+						</li>
+						<li class="advantages__item">
+							<img src="images/features-2.png" class="advantages__image-2" alt="Наші сильні сторони">
+							<p>Гарантія мінімальної ціни</p>
+						</li>
+						<li class="advantages__item">
+							<img src="images/features-3.png" class="advantages__image-3" alt="Наші сильні сторони">
+							<p>Великий вибір декоративних рамок</p>
+						</li>
+						<li class="advantages__item">
+							<img src="images/features-4.png" class="advantages__image-4" alt="Наші сильні сторони">
+							<p>Малюють професійні художники</p>
+						</li>
+						<li class="advantages__item">
+							<img src="images/features-5.png" class="advantages__image-5" alt="Наші сильні сторони">
+							<p>Захист від старіння до 70 років</p>
+						</li>
+						<li class="advantages__item">
+							<img src="images/features-6.png" class="advantages__image-6" alt="Наші сильні сторони">
+							<p>Доставка в будь-яку точку країни</p>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</section>
-		<div class="container-big">
-			<section class="advantages">
-				<h2 class="advantages__title title">Наші переваги</h2>
-				<h3 class="advantages__subtitle subtitle">Чому вибирають саме нас?</h3>
-				<div class="advantages__items">
-					<div class="advantages__item">
-						<img src="images/features-1.png" class="advantages__image-1" alt="Наші сильні сторони">
-						<p>Натуральне полотно і найкращі фарби</p>
-					</div>
-					<div class="advantages__item">
-						<img src="images/features-2.png" class="advantages__image-2" alt="Наші сильні сторони">
-						<p>Гарантія мінімальної ціни</p>
-					</div>
-					<div class="advantages__item">
-						<img src="images/features-3.png" class="advantages__image-3" alt="Наші сильні сторони">
-						<p>Великий вибір декоративних рамок</p>
-					</div>
-					<div class="advantages__item">
-						<img src="images/features-4.png" class="advantages__image-4" alt="Наші сильні сторони">
-						<p>Малюють професійні художники</p>
-					</div>
-					<div class="advantages__item">
-						<img src="images/features-5.png" class="advantages__image-5" alt="Наші сильні сторони">
-						<p>Захист від старіння до 70 років</p>
-					</div>
-					<div class="advantages__item">
-						<img src="images/features-6.png" class="advantages__image-6" alt="Наші сильні сторони">
-						<p>Доставка в будь-яку точку країни</p>
-					</div>
-				</div>
-			</section>
-		</div>
 		<section class="sizes">
 			<h2 class="sizes__title title">Популярні розміри і ціни</h2>
 			<h3 class="sizes__subtitle subtitle">Можемо виготовити картину будь-якого розміру!</h3>
-			<div class="sizes__pictures">
-				<div class="sizes__picture picture">
+			<ul class="sizes__pictures">
+				<li class="sizes__picture picture">
 					<div class="picture__image">
 						<img src="images/sizes-1.png" alt="Чисте полотно">
 						<img src="images/sizes-1-1.png" class="picture__img-hover" alt="Приклад роботи">
@@ -405,8 +421,8 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="sizes__picture picture">
+				</li>
+				<li class="sizes__picture picture">
 					<div class="picture__image">
 						<img src="images/sizes-2.png" alt="Чисте полотно">
 						<img src="images/sizes-2-1.png" class="picture__img-hover" alt="Приклад роботи">
@@ -418,8 +434,8 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="sizes__picture picture hit-sales">
+				</li>
+				<li class="sizes__picture picture hit-sales">
 					<div class="picture__image">
 						<img src="images/sizes-3.png" alt="Чисте полотно">
 						<img src="images/sizes-3-1.png" class="picture__img-hover" alt="Приклад роботи">
@@ -434,8 +450,8 @@
 							<p>хіт продажу</p>
 						</div>
 					</div>
-				</div>
-				<div class="sizes__picture picture">
+				</li>
+				<li class="sizes__picture picture">
 					<div class="picture__image">
 						<img src="images/sizes-4.png" alt="Чисте полотно">
 						<img src="images/sizes-4-1.png" class="picture__img-hover" alt="Приклад роботи">
@@ -447,68 +463,72 @@
 							</div>
 						</div>
 					</div>
+				</li>
+			</ul>
+		</section>
+		<section class="process-section">
+			<div class="container">
+				<div class="process">
+					<h2 class="process__title title">Як ми будемо з вами працювати</h2>
+					<h3 class="process__subtitle subtitle">Процес виготовлення картини</h3>
+					<ul class="process__items">
+						<li class="process__item">
+							<img src="images/scheme-1.png" class="process__image-1 circle-shadow" alt="1 етап">
+							<p>Надсилайте фотографію та свої побажання</p>
+						</li>
+						<li class="process__item">
+							<img src="images/scheme-2.png" class="process__image-2 circle-shadow" alt="2 етап">
+							<p>Ми готуємо варіанти дизайну з урахуванням ваших вимог</p>
+						</li>
+						<li class="process__item">
+							<img src="images/scheme-3.png" class="process__image-3 circle-shadow" alt="3 етап">
+							<p>Ви затверджуєте макет і художник приступає до роботи</p>
+						</li>
+						<li class="process__item">
+							<img src="images/scheme-4.png" class="process__image-4 circle-shadow" alt="4 етап">
+							<p>Вибираєте варіант багетної рами та оформлення</p>
+						</li>
+						<li class="process__item">
+							<img src="images/scheme-5.png" class="process__image-5 circle-shadow" alt="5 етап">
+							<p>Узгоджуються адреса та зручний час доставки</p>
+						</li>
+						<li class="process__item">
+							<img src="images/scheme-6.png" class="process__image-6 circle-shadow" alt="6 етап">
+							<p>Ви платите суму, що залишилася кур'єру при отриманні картини</p>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</section>
-		<div class="container">
-			<section class="process">
-				<h2 class="process__title title">Як ми будемо з вами працювати</h2>
-				<h3 class="process__subtitle subtitle">Процес виготовлення картини</h3>
-				<div class="process__items">
-					<div class="process__item">
-						<img src="images/scheme-1.png" class="process__image-1 circle-shadow" alt="1 етап">
-						<p>Надсилайте фотографію та свої побажання</p>
-					</div>
-					<div class="process__item">
-						<img src="images/scheme-2.png" class="process__image-2 circle-shadow" alt="2 етап">
-						<p>Ми готуємо варіанти дизайну з урахуванням ваших вимог</p>
-					</div>
-					<div class="process__item">
-						<img src="images/scheme-3.png" class="process__image-3 circle-shadow" alt="3 етап">
-						<p>Ви затверджуєте макет і художник приступає до роботи</p>
-					</div>
-					<div class="process__item">
-						<img src="images/scheme-4.png" class="process__image-4 circle-shadow" alt="4 етап">
-						<p>Вибираєте варіант багетної рами та оформлення</p>
-					</div>
-					<div class="process__item">
-						<img src="images/scheme-5.png" class="process__image-5 circle-shadow" alt="5 етап">
-						<p>Узгоджуються адреса та зручний час доставки</p>
-					</div>
-					<div class="process__item">
-						<img src="images/scheme-6.png" class="process__image-6 circle-shadow" alt="6 етап">
-						<p>Ви платите суму, що залишилася кур'єру при отриманні картини</p>
-					</div>
+		<section class="services-section">
+			<div class="container">
+				<div class="services">
+					<article class="service">
+						<div class="background">
+							<h2 class="service__title title">Оформлення в багетні рами</h2>
+							<p class="service__subtitle subtitle">
+								Ми можемо запропонувати вам оформлення будь-якої рами з величезного асортименту за
+								бажанням.
+							</p>
+							<div class="service__button">
+								<button class="button-order trigger-consultation">Детальніше про послугу</button>
+							</div>
+						</div>
+					</article>
+					<article class="service">
+						<div class="background">
+							<h2 class="service__title title">Замовити портрет маслом у портретиста</h2>
+							<p class="service__subtitle subtitle">
+								Ексклюзивно, якісно, ​​детальне ручне промальовування.
+							</p>
+							<div class="service__button">
+								<button class="button-order trigger-consultation">Детальніше про послугу</button>
+							</div>
+						</div>
+					</article>
 				</div>
-			</section>
-		</div>
-		<div class="container">
-			<section class="services">
-				<article class="service">
-					<div class="background">
-						<h2 class="service__title title">Оформлення в багетні рами</h2>
-						<p class="service__subtitle subtitle">
-							Ми можемо запропонувати вам оформлення будь-якої рами з величезного асортименту за
-							бажанням.
-						</p>
-						<div class="service__button">
-							<button class="button-order trigger-consultation">Детальніше про послугу</button>
-						</div>
-					</div>
-				</article>
-				<article class="service">
-					<div class="background">
-						<h2 class="service__title title">Замовити портрет маслом у портретиста</h2>
-						<p class="service__subtitle subtitle">
-							Ексклюзивно, якісно, ​​детальне ручне промальовування.
-						</p>
-						<div class="service__button">
-							<button class="button-order trigger-consultation">Детальніше про послугу</button>
-						</div>
-					</div>
-				</article>
-			</section>
-		</div>
+			</div>
+		</section>
 		<section class="customers" id="customers">
 			<div class="background">
 				<div class="container-big">
@@ -592,103 +612,109 @@
 				</div>
 			</div>
 		</section>
-		<div class="container">
-			<section class="questions" id="FAQ">
-				<h2 class="questions__title title">Часто задавані питання</h2>
-				<h3 class="questions__subtitle subtitle">Відповімо на будь-яке з ваших питань</h3>
-				<div class="questions__items">
-					<div class="questions__item">
-						<p class="questions__question">Скільки часу потрібно для замовлення ?</p>
-						<div class="questions__answer">
-							<p>Час виконання замовлення залежить від трьох факторів: складності картини, стилю
-								написання та
-								розміру. Середній час виконання замовлення складає 7 днів без урахування часу
-								доставки. У ряді
-								випадків за бажанням замовника можна зменшити термін до 5 днів.
+		<section class="questions-section">
+			<div class="container">
+				<div class="questions" id="FAQ">
+					<h2 class="questions__title title">Часто задавані питання</h2>
+					<h3 class="questions__subtitle subtitle">Відповімо на будь-яке з ваших питань</h3>
+					<div class="questions__items">
+						<div class="questions__item">
+							<p class="questions__question">Скільки часу потрібно для замовлення ?</p>
+							<div class="questions__answer">
+								<p>Час виконання замовлення залежить від трьох факторів: складності картини, стилю
+									написання та
+									розміру. Середній час виконання замовлення складає 7 днів без урахування часу
+									доставки. У ряді
+									випадків за бажанням замовника можна зменшити термін до 5 днів.
 
-								Примітка: Якщо Ви вирішите щось змінити у картині, внести корективи - це може
-								зайняти додатковий
-								час, який не враховується під час терміну виконання.</p>
+									Примітка: Якщо Ви вирішите щось змінити у картині, внести корективи - це може
+									зайняти додатковий
+									час, який не враховується під час терміну виконання.</p>
+							</div>
 						</div>
-					</div>
-					<div class="questions__item">
-						<P class="questions__question">Чи можу я побачити картину до її отримання ?</P>
-						<div class="questions__answer">
-							<p>Так. За готовністю, ми надсилаємо електронною поштою цифрове фото Вашої картини, для
-								того, щоб
-								Ви змогли, при необхідності внести свої коригування та побажання, якщо такі будуть.
-								Ви також
-								зможете побачити картину "наживо" в нашому салоні. Повідомте про це вашого
-								менеджера.</p>
+						<div class="questions__item">
+							<P class="questions__question">Чи можу я побачити картину до її отримання ?</P>
+							<div class="questions__answer">
+								<p>Так. За готовністю, ми надсилаємо електронною поштою цифрове фото Вашої картини, для
+									того, щоб
+									Ви змогли, при необхідності внести свої коригування та побажання, якщо такі будуть.
+									Ви також
+									зможете побачити картину "наживо" в нашому салоні. Повідомте про це вашого
+									менеджера.</p>
+							</div>
 						</div>
-					</div>
-					<div class="questions__item">
-						<P class="questions__question">Якого формату мають бути фотографії ?</P>
-						<div class="questions__answer">
-							<p>Ми працюємо з усіма відомими форматами зображень! Через сайт ви можете завантажити
-								JPEG, TIFF,
-								PNG
-								розміром до 50 мегабайт. Ви повинні мати авторські права або мати дозвіл на
-								використання
-								зображення. Якщо у Вас інший формат зображення (RAW, PDF), ви можете скористатися
-								FTP
-								завантажувачем. Якщо ви хочете зробити фото з паперової фотографії (не цифрової),
-								надішліть його
-								нам, ми відскануємо, обробимо та повернемо фото разом із вашим замовленням!</p>
+						<div class="questions__item">
+							<P class="questions__question">Якого формату мають бути фотографії ?</P>
+							<div class="questions__answer">
+								<p>Ми працюємо з усіма відомими форматами зображень! Через сайт ви можете завантажити
+									JPEG, TIFF,
+									PNG
+									розміром до 50 мегабайт. Ви повинні мати авторські права або мати дозвіл на
+									використання
+									зображення. Якщо у Вас інший формат зображення (RAW, PDF), ви можете скористатися
+									FTP
+									завантажувачем. Якщо ви хочете зробити фото з паперової фотографії (не цифрової),
+									надішліть його
+									нам, ми відскануємо, обробимо та повернемо фото разом із вашим замовленням!</p>
+							</div>
 						</div>
-					</div>
-					<div class="questions__item">
-						<P class="questions__question">Чи можу я дати особливі вказівки художнику ?</P>
-						<div class="questions__answer">
-							<p>Коли ви розміщуєте своє замовлення на сайті, ви можете додати свої коментарі до
-								спеціального
-								текстового поля. Ви також можете: об'єднати об'єкти з різних фото в одне або
-								видалити об'єкти з
-								фото, можете поміняти заднє тло, поміняти одяг, вбрання, зробити кольорову картину з
-								чорно-білого
-								фото, а також замовити картину з пошкодженого або старого фото.</p>
+						<div class="questions__item">
+							<P class="questions__question">Чи можу я дати особливі вказівки художнику ?</P>
+							<div class="questions__answer">
+								<p>Коли ви розміщуєте своє замовлення на сайті, ви можете додати свої коментарі до
+									спеціального
+									текстового поля. Ви також можете: об'єднати об'єкти з різних фото в одне або
+									видалити об'єкти з
+									фото, можете поміняти заднє тло, поміняти одяг, вбрання, зробити кольорову картину з
+									чорно-білого
+									фото, а також замовити картину з пошкодженого або старого фото.</p>
+							</div>
 						</div>
 					</div>
 				</div>
-			</section>
-		</div>
-		<div class="background">
-			<div class="container">
-				<section class="design">
-					<div class="design__image">
-						<img src="images/promo-3.png" alt="Портрет в стилі поп-арт" class="circle-shadow">
-					</div>
-					<div class="design__body">
-						<h2 class="design__title title">Просто відправте фото і</h2>
-						<h3 class="design__subtitle subtitle">Ми вишлемо вам дизайн безкоштовно на протязі 1 години</h3>
-						<div class="design__button">
-							<button class="button-order trigger-design">Замовити дизайн портрета</button>
-						</div>
-					</div>
-				</section>
 			</div>
-		</div>
-		<div class="background-darker">
-			<div class="container">
-				<section class="consultation">
-					<h2 class="consultation__title title">Залишились питання?</h2>
-					<h3 class="consultation__subtitle subtitle">Отримайте консультацію безкоштовно</h3>
-					<form action="#">
-						<div class="consultation__inputs">
-							<input type="text" name="name" placeholder="Ваше ім'я" class="consultation__input-small">
-							<input type="text" name="phone" placeholder="Ваш телефон" class="consultation__input-small">
-							<input type="text" name="email" placeholder="Ваш E-mail" class="consultation__input-small">
+		</section>
+		<section class="design-section">
+			<div class="background">
+				<div class="container">
+					<div class="design">
+						<div class="design__image">
+							<img src="images/promo-3.png" alt="Портрет в стилі поп-арт" class="circle-shadow">
 						</div>
-						<input type="text" name="question" placeholder="Залиште ваше запитання тут"
-							class="consultation__input-big">
-						<div class="consultation__button">
-							<button class="button-order">Отримати консультацію</button>
+						<div class="design__body">
+							<h2 class="design__title title">Просто відправте фото і</h2>
+							<h3 class="design__subtitle subtitle">Ми вишлемо вам дизайн безкоштовно на протязі 1 години</h3>
+							<div class="design__button">
+								<button class="button-order trigger-design">Замовити дизайн портрета</button>
+							</div>
 						</div>
-					</form>
-				</section>
+					</div>
+				</div>
 			</div>
-		</div>
-		<div data-modal class="popup-design popup">
+		</section>
+		<section class="consultation-section">
+			<div class="background-darker">
+				<div class="container">
+					<div class="consultation">
+						<h2 class="consultation__title title">Залишились питання?</h2>
+						<h3 class="consultation__subtitle subtitle">Отримайте консультацію безкоштовно</h3>
+						<form action="#">
+							<div class="consultation__inputs">
+								<input type="text" name="name" placeholder="Ваше ім'я" class="consultation__input-small">
+								<input type="text" name="phone" placeholder="Ваш телефон" class="consultation__input-small">
+								<input type="text" name="email" placeholder="Ваш E-mail" class="consultation__input-small">
+							</div>
+							<input type="text" name="question" placeholder="Залиште ваше запитання тут"
+								class="consultation__input-big">
+							<div class="consultation__button">
+								<button class="button-order">Отримати консультацію</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<article data-modal class="popup-design popup">
 			<div class="popup-design__body popup__body">
 				<h4 class="popup-design__title popup__title">Замовити дизайн портрета</h4>
 				<form action="#">
@@ -715,8 +741,8 @@
 				<img src="./images/svg/failure.png" class="failure" alt="failure">
 				<img src="images/svg/x.png" alt="svg" class="svg-big close popup__close">
 			</div>
-		</div>
-		<div data-modal class="popup-consultation popup">
+		</article>
+		<article data-modal class="popup-consultation popup">
 			<div class="popup-consultation__body popup__body">
 				<h4 class="popup-consultation__title popup__title">Залишились питання?</h4>
 				<h4 class="popup-consultation__subtitle popup__subtitle">Замов зворотній дзвінок</h4>
@@ -735,8 +761,8 @@
 				<img src="./images/svg/failure.png" class="failure" alt="failure">
 				<img src="images/svg/x.png" alt="svg" class="svg-big close popup__close">
 			</div>
-		</div>
-		<div data-modal class="popup-consultation popup-consultation-timer popup">
+		</article>
+		<article data-modal class="popup-consultation popup-consultation-timer popup">
 			<div class="popup-consultation__body popup__body">
 				<h4 class="popup-consultation__title popup__title">Ви знаходитесь на сайті більше 1хв...</h4>
 				<h4 class="popup-consultation__subtitle popup__subtitle">Бажаєте замовити зворотній дзвінок?</h4>
@@ -755,7 +781,7 @@
 				<img src="./images/svg/failure.png" class="failure" alt="failure">
 				<img src="images/svg/x.png" alt="svg" class="svg-big close popup__close">
 			</div>
-		</div>
+		</article>
 		<div class="gift-button-a gift-animated">
 			<div class="gift-button__wrapper">
 				<div class="gift-button__circle">
@@ -763,7 +789,7 @@
 				</div>
 			</div>
 		</div>
-		<div data-modal class="popup-gift popup">
+		<article data-modal class="popup-gift popup">
 			<div class="popup-gift__body popup__body">
 				<h4 class="popup-gift__title popup__title">У нас є для вас подарунок !</h4>
 				<div class="gift-button">
@@ -779,55 +805,55 @@
 				</p>
 				<img src="images/svg/x.png" alt="svg" class="svg-big close popup__close">
 			</div>
-		</div>
+		</article>
 		<button class="scroll-button">
 			<img class="svg-scroll" src="images/svg/up-arrow.png" alt="scroll to start">
 		</button>
 	</main>
 
 	<footer>
-		<div class="footer">
-			<div class="footer__body">
-				<div class="footer__column">
+		<article class="footer">
+			<ul class="footer__body">
+				<li class="footer__column">
 					<h3 class="footer__subtitle">Портрет на полотні</h3>
 					<div class="footer__sub-column-add">
-						<div class="footer__sub-column column-add">
-							<p>Поп-арт</p>
-							<p>Живопис</p>
-							<p>Коллаж</p>
-						</div>
-						<div class="footer__sub-column">
-							<p>Фотомозаїка</p>
-							<p>Портрет маслом</p>
-							<p>Шарж по фото</p>
-							<p>Love is...</p>
-						</div>
+						<ul class="footer__sub-column column-add">
+							<li>Поп-арт</li>
+							<li>Живопис</li>
+							<li>Коллаж</li>
+						</ul>
+						<ul class="footer__sub-column">
+							<li>Фотомозаїка</li>
+							<li>Портрет маслом</li>
+							<li>Шарж по фото</li>
+							<li>Love is...</li>
+						</ul>
 					</div>
-				</div>
-				<div class="footer__column">
+				</li>
+				<li class="footer__column">
 					<h3 class="footer__subtitle">Ідеї подарунків</h3>
-					<div class="footer__sub-column">
-						<p>Готові картини</p>
-						<p>Цікаві постери</p>
-					</div>
-				</div>
-				<div class="footer__column">
+					<ul class="footer__sub-column">
+						<li>Готові картини</li>
+						<li>Цікаві постери</li>
+					</ul>
+				</li>
+				<li class="footer__column">
 					<h3 class="footer__subtitle">Покупцям</h3>
-					<div class="footer__sub-column">
-						<p>Термінове виготовлення</p>
-						<p>Доставка і оплата</p>
-						<p>Схема роботи</p>
-						<p>Контакти</p>
-					</div>
-				</div>
-			</div>
-			<div class="footer__contacts">
+					<ul class="footer__sub-column">
+						<li>Термінове виготовлення</li>
+						<li>Доставка і оплата</li>
+						<li>Схема роботи</li>
+						<li>Контакти</li>
+					</ul>
+				</li>
+			</ul>
+			<address class="footer__contacts">
 				<a href="tel:+380981312888"><span class="contacts-big">+38 (098) 13-12-888</span></a>
 				<a href="tel:+380672312000"><span class="contacts-small">+38 (067) 23-12-000</span></a>
 				<span class="footer__all-day">Цілодобово, без вихідних</span>
 				<a class="footer-mail" href="mailto:palen.arthouse@gmail.com">palen.arthouse@gmail.com</a>
-			</div>
-		</div>
+			</address>
+		</article>
 	</footer>
 
 	<!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
